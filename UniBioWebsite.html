@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+
+  <script>// Smooth scrolling for anchor links
+    document.addEventListener('DOMContentLoaded', () => {
+      const anchorLinks = document.querySelectorAll('a[href^="#"]');
+      
+      anchorLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          
+          const target = document.querySelector(link.getAttribute('href'));
+          
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+    
+    // Form submission handling
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.querySelector('form');
+      
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // You can perform form validation or AJAX submission here
+        
+        // Example: Displaying a success message
+        const successMessage = document.createElement('p');
+        successMessage.textContent = 'Message sent successfully!';
+        form.appendChild(successMessage);
+      });
+    });
+    </script>
+    
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!--<img src="UniBio_Logo.png" alt = "img" height = "50" width = "70"/>-->
+        <div class="logo"> UniBio (India) Hatcheries Pvt Ltd </div>
+        <ul class="nav-links">
+          <li><a href="UniBioWebsite.html">Home</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="#services">Sustainability</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav></header>
+
+  <section class="welcome">
+    <div class="container">
+      <h1>Welcome to Unibio</h1>
+      <p>Leading the way in sustainable shrimp production.</p>
+      <a href="Welcomepage.html" class="btn">Learn More</a>
+    </div>
+  </section>
+<!--About Us-->
+<section class="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>"At UniBio, we are committed to sustainable shrimp production through responsible breeding practices and the supply of high-quality shrimp larvae and feed. With years of experience in the industry, our team of experts are dedicated to supporting farmers in achieving their production goals."</p>
+    <a href="AboutUs.html" class="btn">Read More</a>
+  </div>
+</section>
+  <section class="services">
+    <div class="container">
+      <h2>Sustainability</h2>
+      <div class="service">
+        <img src="service1_icon.png" alt="Service 1 Icon">
+        <h3>Service 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="service">
+        <img src="service2_icon.png" alt="Service 2 Icon">
+        <h3>Service 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <!-- Add more services as needed -->
+    </div>
+  </section>
+  <!--Contact-->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>For enquiries and orders, please fill out the form below or contact us directly:</p>
+      <div class="contact-form">
+        <form action="submit.php" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 UniBio (India) Hatcheries Pvt Ltd. All rights reserved.</p>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
