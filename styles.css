@@ -11,7 +11,17 @@ body {
     padding: 0 20px;
     display: inline-block;
   }
-  
+  .pcontainer {
+    max-width: 1200px;
+    margin-right: 0 auto;
+    padding: 0 20px;
+    display: inline-block;
+    text-align: left;
+  }
+  .textcenter{
+    text-align: center;
+    padding-bottom: 20px;
+  }
 header {
   background-color: rgba(0, 0, 0, 0.1); 
   backdrop-filter: blur(10px);
@@ -234,7 +244,7 @@ header {
     padding: 100px 0;
     text-align: center; 
   }
-  .testimony, .monodon, .qc{
+  .testimony, .monodon, .qc, .privacy, .terms{
     padding: 100px 0;
     text-align: center; 
     background-color:  #f2f2f2;
