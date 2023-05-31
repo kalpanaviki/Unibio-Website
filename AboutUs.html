@@ -7,24 +7,33 @@
   <title>About Us</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <div class="navbar-container">
-            
-            <div class="logo">UniBio (India) Hatcheries Pvt Ltd</div>
-            <ul class="nav-links">
-                <li><a href="UniBioWebsite.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-              <li><a href="#services">Sustainability</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-          </div>
-        </nav></header>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        
+        <div class="logo">UniBio (India) Hatcheries Pvt Ltd</div>
+        <ul class="nav-links">
+            <li><a href="UniBioWebsite.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="#services">Sustainability</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('.hamburger-menu').on('click', function() {
+              $(this).toggleClass('open');
+            });
+          });
+        </script>
+      </div>
+    </nav></header>
    <!--About Us-->
 <section class="aboutus">
   <div class="container">
