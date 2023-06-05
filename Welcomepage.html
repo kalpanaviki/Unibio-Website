@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
-    <link rel="stylesheet" href="styles.css">
-  <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-          <div class="navbar-container">
-            
-            <div class="logo">UniBio (India) Hatcheries Pvt Ltd</div>
-            <ul class="nav-links">
-                <li><a href="UniBioWebsite.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
-              <li><a href="#services">Sustainability</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger-menu">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </div>
-          
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script>
-              $(document).ready(function() {
-                $('.hamburger-menu').on('click', function() {
-                  $(this).toggleClass('open');
-                });
-              });
-            </script>
-          </div>
-        </nav></header>
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <!--<img src="UniBio_Logo.png" alt = "img" height = "50" width = "70"/>-->
+        <section>
+          <div class="content"> 
+          <h2>UniBio (India) Hatcheries Pvt Ltd </h2>
+          <h2> UniBio (India) Hatcheries Pvt Ltd </h2>
+        </div>
+        </section>
+        <ul class="nav-links">
+        
+          <li><a href="UniBioWebsite.html">Home</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+          <li><a href="#services">Sustainability</a></li>
+          <li><a href="#contact">Contact</a></li>
+        <li></li><div class="hamburger-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div></li>
+        <li><div class="toggle-container">
+          <input type="checkbox" id="toggle" class="toggle-checkbox">
+          <label for="toggle" class="toggle-label">
+            <span class="toggle-inner"></span>
+            <span class="toggle-switch"></span>
+          </label>
+        </div>
+        </li>
+        </ul>
+      </div>
+    </nav></header>
          <!--Monodon-->
-<section class="monodon">
-    <div class="container">
         <section class="monodon">
           <div class="container">
-            <h2>About <i>P.monodon</i></h2>
+            <h1>About <i>P.monodon</i></h1>
             <p><i>P. monodon</i> are generally found in sandy estuaries, mangroves, and the coasts of Eastern Africa, Southeast Asia and Northern Australia.
                  Upon adulthood, they move to deeper waters (0- 110 meters) and live on muddy or rocky bottoms. 
                  The P. monodon has shown to be nocturnal in the wild, burrowing into substrate during the day, and coming out at night to feed P. monodon typically feed on detritus, polychaete worms, mollusks, small crustaceans and algae. 
@@ -51,11 +55,9 @@
     </div>
 </section>
           <!--Way-->
-<section class="way">
-    <div class="container">
         <section class="way">
           <div class="container">
-            <h2>Our way of Culture</h2>
+            <h1>Our way of Culture</h1>
             <p>We adopt Galveston method of frequently exchanging treated water and transfers of PL3 to different tanks, where they were reared to PL12 or until sold. 
                 This results in higher survival rate, better economical nauplii production in our poducts.
             </p>
@@ -64,11 +66,9 @@
     </div>
   </section>
             <!--QC-->
-<section class="qc">
-    <div class="container">
         <section class="qc">
           <div class="container">
-            <h2>Quality Control</h2>
+            <h1>Quality Control</h1>
             <p>From vibriosis, yellowhead to white spot virus and everything in between. Securing a good source of water that can be properly filtered and sterilised is the number one priority. 
                 Also, a good source of clean freshwater is needed to maintain proper salinities for spawning and larval production, as well as to acclimate post-larvae to different pond salinities for grow-out.
             </p>
@@ -86,5 +86,15 @@
               </ul>
             </div>
           </footer>
+          <script src="script.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('.hamburger-menu').on('click', function() {
+              $(this).toggleClass('open');
+            });
+          });
+        </script>
     </body>
     </html>

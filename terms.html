@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
-    <link rel="stylesheet" href="styles.css">
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
           <div class="navbar-container">
-            
-            <div class="logo">UniBio (India) Hatcheries Pvt Ltd</div>
+            <!--<img src="UniBio_Logo.png" alt = "img" height = "50" width = "70"/>-->
+            <section>
+                <div class="content"> 
+                <h2>UniBio (India) Hatcheries Pvt Ltd </h2>
+                <h2> UniBio (India) Hatcheries Pvt Ltd </h2>
+              </div>
+              </section>
             <ul class="nav-links">
-                <li><a href="UniBioWebsite.html">Home</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
+            
+              <li><a href="UniBioWebsite.html">Home</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
               <li><a href="#services">Sustainability</a></li>
               <li><a href="#contact">Contact</a></li>
+            <li></li><div class="hamburger-menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div></li>
+            <li><div class="toggle-container">
+              <input type="checkbox" id="toggle" class="toggle-checkbox">
+              <label for="toggle" class="toggle-label">
+                <span class="toggle-inner"></span>
+                <span class="toggle-switch"></span>
+              </label>
+            </div>
+            </li>
             </ul>
-            <div class="hamburger-menu">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-              </div>
-            
-              <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-              <script>
-                $(document).ready(function() {
-                  $('.hamburger-menu').on('click', function() {
-                    $(this).toggleClass('open');
-                  });
-                });
-              </script>
           </div>
         </nav></header>
          <!--Terms of Service-->
-<section class="terms">
-    <div class="pcontainer">
         <section class="terms">
           <div class="pcontainer">
             <div class="textcenter">
-            <h2>Terms of Service</h2>
+            <h1>Terms of Service</h1>
             </div>
 
             <p>Effective Date: 30/05/2023</p>
@@ -71,17 +75,17 @@
             <h4>2.2 User Content</h4>
             You retain ownership of any content you submit, post, or display on the Service. By submitting content, you grant us a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, adapt, publish, translate, and distribute such content for the purpose of providing and promoting the Service.
             
-            </h3>3. DISCLAIMER OF WARRANTIES</h3>
+            <h3>3. DISCLAIMER OF WARRANTIES</h3>
             
             <p>The Service is provided on an "as is" and "as available" basis, without warranties of any kind, whether express or implied. We do not warrant that the Service will be error-free, secure, or uninterrupted.</p>
             
-            </h3> 4. LIMITATION OF LIABILITY</h3>
+            <h3> 4. LIMITATION OF LIABILITY</h3>
             
             <p> To the fullest extent permitted by applicable law, [Your Company] and its officers, directors, employees, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use or inability to use the Service.</p>
             
             <h3> 5. INDEMNIFICATION</h3>
             
-             <p> You agree to indemnify and hold [Your Company] and its officers, directors, employees, and affiliates harmless from and against any claims, liabilities, damages, losses, and expenses, including attorney's fees, arising out of your use of the Service or your violation of these Terms.</p>
+             <p> You agree to indemnify and hold Unibio and its officers, directors, employees, and affiliates harmless from and against any claims, liabilities, damages, losses, and expenses, including attorney's fees, arising out of your use of the Service or your violation of these Terms.</p>
             
             <h3>6. CHANGES TO THE TERMS</h3>
             
@@ -89,7 +93,7 @@
             
             <h3> 7. GOVERNING LAW AND DISPUTE RESOLUTION</h3>
             
-             <p> These Terms shall be governed by and construed in accordance with the laws of [Your Country/State]. Any dispute arising out of or in connection with these Terms shall be resolved through negotiation between the parties. If the dispute cannot be resolved through negotiation, it shall be submitted to binding arbitration in accordance with the rules of [Arbitration Organization], with the arbitration taking place in [City, Country].</p>
+             <p> These Terms shall be governed by and construed in accordance with the laws of India. Any dispute arising out of or in connection with these Terms shall be resolved through negotiation between the parties. If the dispute cannot be resolved through negotiation, it shall be submitted to binding arbitration in accordance with the rules of Indian Council of Arbitration, with the arbitration taking place in Tamil Nadu, India.</p>
             
             <h3> 8. CONTACT US</h3>
             
@@ -108,5 +112,15 @@
       </ul>
     </div>
   </footer>
+  <script src="script.js"></script>
+      
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.hamburger-menu').on('click', function() {
+        $(this).toggleClass('open');
+      });
+    });
+  </script>
 </body>
 </html>

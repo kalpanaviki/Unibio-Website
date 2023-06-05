@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
-    <link rel="stylesheet" href="styles.css">
-  <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="navbar-container">
-        
-        <div class="logo">UniBio (India) Hatcheries Pvt Ltd</div>
+        <!--<img src="UniBio_Logo.png" alt = "img" height = "50" width = "70"/>-->
+        <section>
+          <div class="content"> 
+          <h2>UniBio (India) Hatcheries Pvt Ltd </h2>
+          <h2> UniBio (India) Hatcheries Pvt Ltd </h2>
+        </div>
+        </section>
         <ul class="nav-links">
-            <li><a href="UniBioWebsite.html">Home</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
+        
+          <li><a href="UniBioWebsite.html">Home</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
           <li><a href="#services">Sustainability</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger-menu">
+        <li></li><div class="hamburger-menu">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
+        </div></li>
+        <li><div class="toggle-container">
+          <input type="checkbox" id="toggle" class="toggle-checkbox">
+          <label for="toggle" class="toggle-label">
+            <span class="toggle-inner"></span>
+            <span class="toggle-switch"></span>
+          </label>
         </div>
-      
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-          $(document).ready(function() {
-            $('.hamburger-menu').on('click', function() {
-              $(this).toggleClass('open');
-            });
-          });
-        </script>
+        </li>
+        </ul>
       </div>
     </nav></header>
    <!--About Us-->
-<section class="aboutus">
-  <div class="container">
       <section class="aboutus">
         <div class="container">
           <h2>About Us</h2>
@@ -48,8 +52,6 @@
   </div>
 </section>
       <!--Our Expertise-->
-<section class="expertise">
-    <div class="container">
         <section class="expertise">
           <div class="container">
             <h2>Our Expertise</h2>
@@ -60,8 +62,6 @@
     </div>
   </section>
    <!--Testimony to Madagascar-->
-<section class="testimony">
-    <div class="container">
         <section class="testimony">
           <div class="container">
             <h2>Testimony to Madagascar</h2>
@@ -82,5 +82,15 @@
           </ul>
         </div>
       </footer>
+      <script src="script.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('.hamburger-menu').on('click', function() {
+              $(this).toggleClass('open');
+            });
+          });
+        </script>
 </body>
 </html>

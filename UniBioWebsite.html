@@ -1,82 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <head>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
-
-  <script>
-  // Smooth scrolling for anchor links
-    document.addEventListener('DOMContentLoaded', () => {
-      const anchorLinks = document.querySelectorAll('a[href^="#"]');
-      
-      anchorLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          
-          const target = document.querySelector(link.getAttribute('href'));
-          
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth'
-            });
-          }
-        });
-      });
-    });
-    
-    // Form submission handling
-    document.addEventListener('DOMContentLoaded', () => {
-      const form = document.querySelector('form');
-      
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // You can perform form validation or AJAX submission here
-        
-        // Example: Displaying a success message
-        const successMessage = document.createElement('p');
-        successMessage.textContent = 'Message sent successfully!';
-        form.appendChild(successMessage);
-      });
-    });
-
-    </script>
-    
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="navbar-container">
         <!--<img src="UniBio_Logo.png" alt = "img" height = "50" width = "70"/>-->
-        <div class="logo"> UniBio (India) Hatcheries Pvt Ltd </div>
+        <section>
+        <div class="content"> 
+        <h2>UniBio (India) Hatcheries Pvt Ltd </h2>
+        <h2> UniBio (India) Hatcheries Pvt Ltd </h2>
+      </div>
+      </section>
+    
         <ul class="nav-links">
+        
           <li><a href="UniBioWebsite.html">Home</a></li>
           <li><a href="AboutUs.html">About Us</a></li>
           <li><a href="#services">Sustainability</a></li>
           <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger-menu">
+        <li></li><div class="hamburger-menu">
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
+        </div></li>
+        <li><div class="toggle-container">
+          <input type="checkbox" id="toggle" class="toggle-checkbox">
+          <label for="toggle" class="toggle-label">
+            <span class="toggle-inner">
+            </span>
+            <span class="toggle-switch"></span>
+          </label>
         </div>
-      
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script>
-          $(document).ready(function() {
-            $('.hamburger-menu').on('click', function() {
-              $(this).toggleClass('open');
-            });
-          });
-        </script>
+        </li>
+        </ul>
       </div>
     </nav></header>
 
   <section class="welcome">
     <div class="container">
-      <h1>Welcome to Unibio</h1>
+      <h1>Welcome to UniBio</h1>
       <p>Leading the way in sustainable shrimp production.</p>
       <a href="Welcomepage.html" class="btn">Learn More</a>
     </div>
@@ -129,5 +98,15 @@
       </ul>
     </div>
   </footer>
+  <script src="script.js"></script>
+      
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('.hamburger-menu').on('click', function() {
+              $(this).toggleClass('open');
+            });
+          });
+        </script>
 </body>
 </html>
