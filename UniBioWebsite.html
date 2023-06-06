@@ -23,7 +23,7 @@
         
           <li><a href="UniBioWebsite.html">Home</a></li>
           <li><a href="AboutUs.html">About Us</a></li>
-          <li><a href="#services">Sustainability</a></li>
+          <li><a href="#service">Sustainability</a></li>
           <li><a href="#contact">Contact</a></li>
         <li></li><div class="hamburger-menu">
           <span class="line"></span>
@@ -47,18 +47,18 @@
     <div class="container">
       <h1>Welcome to UniBio</h1>
       <p>Leading the way in sustainable shrimp production.</p>
-      <a href="Welcomepage.html" class="btn">Learn More</a>
+      <a href="Welcomepage.html" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>Learn More</a>
     </div>
   </section>
 <!--About Us-->
-<section class="about">
+<section class="about" id="aboutus">
   <div class="container">
     <h2>About Us</h2>
     <p>"At UniBio, we are committed to sustainable shrimp production through responsible breeding practices and the supply of high-quality shrimp larvae and feed. With years of experience in the industry, our team of experts are dedicated to supporting farmers in achieving their production goals."</p>
-    <a href="AboutUs.html" class="btn">Read More</a>
+    <a href="AboutUs.html" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>Read More</a>
   </div>
 </section>
-  <section class="services">
+  <section class="services" id="service">
     <div class="container">
       <h2>Sustainability</h2>
       <div class="service">
@@ -75,7 +75,7 @@
     </div>
   </section>
   <!--Contact-->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <h2>Contact Us</h2>
       <p>For enquiries and orders, please fill out the form below or contact us directly:</p>
@@ -84,9 +84,44 @@
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
           <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
+          <button type="submit" class="btn"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>Send Message</button>
       </form>
     </div>
+    <script>// Smooth scrolling for anchor links
+      document.addEventListener('DOMContentLoaded', () => {
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  
+        anchorLinks.forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+  
+            const target = document.querySelector(link.getAttribute('href'));
+  
+            if (target) {
+              target.scrollIntoView({
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+  
+      // Form submission handling
+      document.addEventListener('DOMContentLoaded', () => {
+        const form = document.querySelector('form');
+  
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+  
+          // You can perform form validation or AJAX submission here
+  
+          // Example: Displaying a success message
+          const successMessage = document.createElement('p');
+          successMessage.textContent = 'Message sent successfully!';
+          form.appendChild(successMessage);
+        });
+      });
+  </script>
   </section>
 
   <footer>
