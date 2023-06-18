@@ -1,0 +1,31 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #052539;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+
+  p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0rem;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    margin: 0rem;
+    li {
+      a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      padding: 0rem 0.5rem;
+    }
+  }
+}

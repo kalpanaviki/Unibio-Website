@@ -1,0 +1,30 @@
+.navbar {
+  background-color: transparent !important;
+  width: 100%;
+  &-brand {
+    img {
+      height: 3rem;
+      width: 8rem;
+    }
+  }
+  &-collapse {
+    position: absolute;
+    right: 10%;
+  }
+  &-nav {
+    .nav-item {
+      padding: 0rem 1rem;
+      a {
+        color: #fff;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      &:hover {
+        border-bottom: 1px solid #031a3f;
+        a {
+          color: #031a3f;
+        }
+      }
+    }
+  }
+}
