@@ -1,0 +1,19 @@
+.about {
+  padding-top: 2rem;
+}
+
+.about-first,
+.about-second,
+.about-third {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: #fff;
+  font-weight: 500;
+  h2 {
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+}

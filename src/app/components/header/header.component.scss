@@ -1,6 +1,9 @@
 .navbar {
   background-color: transparent !important;
   width: 100%;
+  &::after {
+    content: "";
+  }
   &-brand {
     img {
       height: 3rem;

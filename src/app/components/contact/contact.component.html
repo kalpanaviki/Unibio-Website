@@ -1,0 +1,47 @@
+<div class="container contact">
+  <h2>Contact Us</h2>
+  <p>
+    For enquiries and orders, please fill out the form below or contact us
+    directly
+  </p>
+
+  <form [formGroup]="contactForm" ngSubmit="onSubmit()">
+    <div class="contact-fields">
+      <div class="input-group mb-3">
+        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="name"
+          placeholder="Your Name"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text"
+          ><i class="bi bi-envelope-at-fill"></i
+        ></span>
+        <input
+          type="text"
+          class="form-control"
+          formControlName="email"
+          placeholder="Your Email"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <span class="input-group-text"
+          ><i class="bi bi-chat-dots-fill"></i
+        ></span>
+        <textarea
+          class="form-control"
+          type="text"
+          placeholder="Your Message"
+          formControlName="message"
+        ></textarea>
+      </div>
+      <button type="button" class="btn-submit btn-sm">
+        Send Message <i class="bi bi-send-fill"></i>
+      </button>
+    </div>
+  </form>
+</div>

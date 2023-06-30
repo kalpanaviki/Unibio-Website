@@ -7,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'Unibio-Website';
+  showPopup: boolean = false;
 
   ngOnInit() {
-    const showToast = document.getElementById('#welcomeToast')!;
-    console.log(showToast);
-    // showToast.toast('show');
+    this.showPopup = false;
   }
 }

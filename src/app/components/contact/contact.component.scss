@@ -1,0 +1,52 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 2% 25% 5% 25%;
+  width: 100%;
+  color: #fff;
+  font-weight: 500;
+  form {
+    width: 100%;
+  }
+  h2 {
+    font-weight: bold;
+  }
+  &-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .input-group {
+      height: 3rem;
+      input,
+      textarea {
+        color: #111214;
+        font-weight: 500;
+        outline: none;
+        box-shadow: none !important;
+        &:focus {
+          border-color: aqua;
+        }
+      }
+      .bi {
+        color: aqua;
+      }
+    }
+  }
+}
+.btn-submit {
+  font-size: 20px;
+  border: none;
+  border-radius: 16px;
+  margin-top: 1rem;
+  background: transparent;
+  color: #fff;
+  .bi {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+  }
+}
