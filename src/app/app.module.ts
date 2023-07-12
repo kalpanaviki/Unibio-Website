@@ -9,6 +9,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MainComponent } from './components/main/main.component';
 import { AboutComponent } from './components/about/about.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsComponent } from './terms/terms.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { AboutComponent } from './components/about/about.component';
     ContactComponent,
     MainComponent,
     AboutComponent,
+    WelcomeComponent,
+    PrivacyComponent,
+    TermsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
   providers: [],

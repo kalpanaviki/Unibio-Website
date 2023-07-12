@@ -1,0 +1,32 @@
+.about-first,.about-second,.about-third,.about-fourth
+{
+height: 100vh;
+width: 100%;
+background-size:cover;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 5rem;
+color: #f2f2f2;
+font-size: 25px;
+font-weight: 500;
+h2 {
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+}
+.about-first{
+  background-image: url("../../../assets/images/Monodon.jpeg");
+  color: black;
+}
+.about-second{
+  background-image: url("../../../assets/images/Vision_img.jpg");
+}
+.about-third{
+  background-image: url("../../../assets/images/mision_img.jpg");
+}
+.about-fourth{
+  background-image: url("../../../assets/images/Chennai.jpg");
+  height:auto;
+}

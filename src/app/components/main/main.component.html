@@ -1,18 +1,17 @@
 <div class="container-fluid welcome">
   <div class="welcome-content">
-    <img src="../assets/images/UniBio_Logo_Bg.png" />
+    <img src="../assets/images/UniBio_nobg.png" />
     <p>Leading the way in sustainable shrimp production</p>
-    <button type="button" class="btn btn-outline-info">
+    <button type="button" class="btn btn-outline-info" routerLink="/welcome">
       Learn More<i class="bi bi-arrow-right-square-fill"></i>
     </button>
   </div>
 </div>
 
-<!--About-->
+<!--Buisness-->
 
-<div class="container main">
-  <div class="main-first">
-    <h2>About Us</h2>
+<div class="container-fluid main-first">
+    <h2>Our Buisness</h2>
     <p>
       "At UniBio, we are committed to sustainable shrimp production through
       responsible breeding practices and the supply of high-quality shrimp
@@ -21,14 +20,14 @@
       goals."
     </p>
 
-    <button class="btn" routerLink="/about">
-      Read More <i class="bi bi-arrow-right-square-fill mx-3"></i>
+    <button type="button" class="btn btn-outline-info" routerLink="/about">
+      Read More <i class="bi bi-arrow-right-square-fill"></i>
     </button>
   </div>
 
   <!--Sustainability-->
 
-  <div class="container main-second" id="sustainability">
+  <div class="container-fluid main-second" id="sustainability">
     <h2>Sustainability</h2>
     <div class="main-second-card">
       <div class="card" style="width: 18rem">
@@ -53,7 +52,7 @@
       </div>
     </div>
   </div>
-</div>
+
 
 <!--Contact-->
 <app-contact></app-contact>

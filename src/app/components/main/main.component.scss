@@ -1,10 +1,32 @@
-.main-first,
-.main-second {
-  display: flex;
+.main-first
+{
+  background-image: url("../../../assets/images/Farm.jpeg");
+  height: 100vh;
+  width: 100%;
+  background-size:cover;
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 5rem;
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  h2 {
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+}
+.main-second{
+  background-image: url("../../../assets/images/Beach.jpeg");
+  height: 100vh;
+  width: 100%;
+  background-size:cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
   color: #fff;
   font-weight: 500;
   h2 {
@@ -12,9 +34,26 @@
     margin-bottom: 3rem;
   }
 }
+
+
 .main-first .btn {
   font-size: 20px;
-  border: none;
+  margin-top: 1rem;
+  color: #87cefa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: #ffffff;
+  }
+  .bi {
+    text-align: center;
+    font-size: 28px;
+    margin-left: 1rem;
+  }
+}
+.main-second .btn {
+  font-size: 20px;
   border-radius: 16px;
   margin-top: 1rem;
   background: transparent;
@@ -30,6 +69,7 @@
     font-size: 28px;
   }
 }
+
 .main-second {
   padding-bottom: 5rem;
   &-card {
@@ -41,7 +81,7 @@
   }
 }
 .welcome {
-  background-image: url("../../../assets/images/welcome.webp");
+  background-image: url("../../../assets/videos/sea_video.mp4");
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -53,7 +93,9 @@
     position: relative;
     top: 10%;
     img {
-      object-fit: cover;
+      object-fit:cover;
+      height: 100%;
+      width: 45%;
     }
     p {
       position: absolute;
