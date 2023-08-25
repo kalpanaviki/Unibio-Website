@@ -1,40 +1,71 @@
+<div class="about-first">
+  <div class="about-first-col1">
+    <h2>About UniBio</h2>
+    <p>
+      UniBio (India) Hatcheries is an Indian subsidiary of an international
+      leader in production and marketing of premium quality black tiger shrimp
+      (P. monodon) from its SPF domestication & breeding program. Our seed
+      stocks are the outcome of three decades of proven maturation & seed
+      production technology. We are willing to extend our expertise in nursery
+      and grow-out phases for successful crop.
+    </p>
+  </div>
+  <div class="image"></div>
+</div>
+<div class="about-second">
+  <div class="img-container"></div>
+  <div>
+    <h2>Vision</h2>
+    <p>
+      To be a leading provider of high-quality, sustainable, and genetically
+      superior Penaeus monodon (black tiger shrimp) in India, contributing to
+      the growth and development of the aquaculture industry.
+    </p>
 
-            <div class="about-first">
-              <h2>About Us</h2>
-              <p>
-                UniBio (India) Hatcheries is an Indian subsidiary of an international
-                leader in production and marketing of premium quality black tiger shrimp
-                (P. monodon) from its SPF domestication & breeding program. Our seed
-                stocks are the outcome of three decades of proven maturation & seed
-                production technology. We are willing to extend our expertise in nursery
-                and grow-out phases for successful crop.
-              </p>
-            </div>
-            <div class="about-second">
-              <h2>Vision</h2>
-              <p>
-                To be a leading provider of high-quality, sustainable, and genetically superior Penaeus monodon (black tiger shrimp) in India, contributing to the growth and development of the aquaculture industry.
-              </p>
-            </div>
-            <div class="about-third">
-              <h2>Mission</h2>
-              <p>
-                Our mission is to produce and supply genetically superior Penaeus monodon shrimp that meet the highest quality standards, while promoting sustainable and environmentally responsible aquaculture practices. We are committed to conducting research and development to enhance the genetic potential of our shrimp stock, ensuring disease resistance, growth performance, and product quality. We aim to establish strong partnerships with shrimp farmers and industry stakeholders, providing them with technical support, training, and access to our superior shrimp genetics. Through innovation, integrity, and continuous improvement, we strive to contribute to the success and profitability of our customers and the overall development of the shrimp aquaculture sector in India.
-              </p>
-            </div>
-            <div class="about-fourth">
-                <h2>Geographical Features</h2>
-                <p>
-                  UniBio (India) Hatcheries Pvt Ltd is located at Mugaiyur which is ideally 60KM drive from Chennai in ECR. 
-                  This beach side spot strategically situated along the Bay of Bengal, provides us with abundant access to a diverse range of marine resources and favorable environmental conditions for shrimp aquaculture. 
-                  The coastal water also offers suitable salinity levels, water temperature, and nutrient-rich conditions necessary for shrimp hatchery operations.</p> 
-                  <ul>
-                  <li>Proximity to Markets: Chennai has a well-developed transportation infrastructure, including road, rail, and sea connectivity. This allows for efficient distribution of shrimp larvae or post larvae to shrimp farmers and aquaculture operations across India and even export markets. Proximity to major cities and ports facilitates easy access to markets for both domestic and international trade.</li>
-                  <li>Availability of Skilled Workforce: Chennai is a major urban center with a skilled labor force, including professionals experienced in aquaculture, marine sciences, and hatchery operations. Access to a pool of trained personnel can be advantageous in efficiently managing and operating a shrimp hatchery. </li>
-                  <li>R&D: Chennai hosts several renowned research institutes, universities, and aquaculture research centers such as ICAR, CIBA, TNFU. Collaborations with these institutions can provide access to cutting-edge research, technology transfer, and expertise in shrimp genetics, selective breeding, disease management, and sustainable aquaculture practices.</li>
-                  <li>Government Support: The state government of Tamil Nadu, where Chennai is located, has shown support for the aquaculture industry. They have implemented various policies and initiatives to promote and regulate the shrimp farming sector. This support can provide a conducive business environment for setting up and operating a shrimp hatchery.</li>
-                  <li>Infrastructure and Services: Chennai offers access to essential infrastructure and services required for shrimp hatchery operations, including reliable power supply, water resources, waste management systems, and veterinary support. The presence of hatchery equipment suppliers, feed manufacturers, and other necessary service providers further facilitates smooth operations.</li>
-                  </ul>
-                
-              </div>
-          
+    <h2>Mission</h2>
+    <p>
+      Our mission is to produce and supply genetically superior Penaeus monodon
+      shrimp that meet the highest quality standards, while promoting
+      sustainable and environmentally responsible aquaculture practices. We are
+      committed to conducting research and development to enhance the genetic
+      potential of our shrimp stock, ensuring disease resistance, growth
+      performance, and product quality. We aim to establish strong partnerships
+      with shrimp farmers and industry stakeholders, providing them with
+      technical support, training, and access to our superior shrimp genetics.
+      Through innovation, integrity, and continuous improvement, we strive to
+      contribute to the success and profitability of our customers and the
+      overall development of the shrimp aquaculture sector in India.
+    </p>
+  </div>
+</div>
+<div class="about-third">
+  <div class="img-tn">
+    <img src="../../../assets/images/Chennai.jpg" />
+    <div class="divBlock">
+      <h3>CHENNAI</h3>
+      <h3>TAMILNADU</h3>
+    </div>
+  </div>
+  <div class="features">
+    <h2>Why Chennai</h2>
+    <p>
+      UniBio (India) Hatcheries Pvt Ltd is located at Mugaiyur which is ideally
+      60KM drive from Chennai in ECR. This beach side spot strategically
+      situated along the Bay of Bengal, provides us with abundant access to a
+      diverse range of marine resources and favorable environmental conditions
+      for shrimp aquaculture. The coastal water also offers suitable salinity
+      levels, water temperature, and nutrient-rich conditions necessary for
+      shrimp hatchery operations.
+    </p>
+
+    <div class="card-wrapper">
+      <div class="card" *ngFor="let item of array">
+        <img class="card-img-top" src="../../../assets/images/tick.svg" />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text">{{ item.content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
