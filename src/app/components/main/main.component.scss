@@ -1,15 +1,37 @@
 .main-first
 {
-  background-image: url("../../../assets/images/Farm.jpeg");
+  position: relative;
+  background-image: url("../../../assets/images/Monodon.jpeg");
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100vh;
   width: 100%;
+  background-blend-mode: multiply;
   background-size:cover;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 5rem;
-  color: #ffffff;
+  color: #e79766;
+  font-size: 25px;
+  font-weight: 500;
+}
+.main-first h2 {
+    font-weight: bold;
+    margin-bottom: 3rem;
+  }
+
+.main-second{
+  background-image: url("../../../assets/images/Windmill.jpg");
+  height: 120vh;
+  width: 100%;
+  background-size:cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
   font-size: 25px;
   font-weight: 500;
   h2 {
@@ -17,24 +39,24 @@
     margin-bottom: 3rem;
   }
 }
-.main-second{
-  background-image: url("../../../assets/images/Beach.jpeg");
-  height: 100vh;
+.main-third{
+  background-image: url("../../../assets/images/Wallpaper Edit.png");
+  height: 120vh;
   width: 100%;
   background-size:cover;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 1rem;
   color: #fff;
+  font-size: 25px;
   font-weight: 500;
   h2 {
     font-weight: bold;
     margin-bottom: 3rem;
   }
 }
-
 
 .main-first .btn {
   font-size: 20px;
@@ -52,23 +74,40 @@
     margin-left: 1rem;
   }
 }
-.main-second .btn {
-  font-size: 20px;
-  border-radius: 16px;
-  margin-top: 1rem;
-  background: transparent;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:hover {
-    color: dodgerblue;
-  }
-  .bi {
-    text-align: center;
-    font-size: 28px;
-  }
+.main-second .btn{
+   font-size: 20px;
+margin-top: 1rem;
+color: #87cefa;
+display: flex;
+justify-content: center;
+align-items: center;
+&:hover {
+  color: #ffffff;
 }
+.bi {
+  text-align: center;
+  font-size: 28px;
+  margin-left: 1rem;
+}
+}
+.main-third .btn{
+  font-size: 20px;
+margin-top: 1rem;
+color: #87cefa;
+display: flex;
+justify-content: center;
+align-items: center;
+&:hover {
+ color: #ffffff;
+}
+.bi {
+ text-align: center;
+ font-size: 28px;
+ margin-left: 1rem;
+}
+}
+
+
 
 .main-second {
   padding-bottom: 5rem;
@@ -81,11 +120,25 @@
   }
 }
 .welcome {
-  background-image: url("../../../assets/videos/sea_video.mp4");
   height: 100vh;
   width: 100%;
   background-size: cover;
-  &-content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.welcome::before {
+  content: "";
+  background-image: url("../../../assets/images/Picture22.png");
+  opacity: 0.6; 
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+  .welcome-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,7 +155,7 @@
       top: 60%;
       font-size: 25px;
       font-weight: 500;
-      color: #87cefa;
+      color: #fa0464;
     }
     button {
       position: absolute;
@@ -116,4 +169,31 @@
       }
     }
   }
-}
+  .card-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+    padding: 1rem;
+    .card {
+      margin: 3rem;
+      background-color: #f2f2f2;
+    }
+  }
+
+  img{
+    padding: 3rem 3rem 0;
+    height:250px;
+  }
+
+  .card-text1{
+    color:rgb(255, 153, 0);
+    font-size: 21px;
+    font-weight:800;
+  }
+  .card-text2{
+    color:rgb(68, 68, 68);
+    font-size: 28px;
+    font-weight:800;
+  }
+
+  

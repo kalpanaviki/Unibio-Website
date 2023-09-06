@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,6 +11,10 @@ import { AboutComponent } from './components/about/about.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule} from '@angular/material/icon';
+import { ResourceComponent } from './resource/resource.component';
 
 @NgModule({
   declarations: [
@@ -24,8 +27,10 @@ import { TermsComponent } from './terms/terms.component';
     WelcomeComponent,
     PrivacyComponent,
     TermsComponent,
+    ResourceComponent,
+   
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule,MatButtonModule,MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
 })

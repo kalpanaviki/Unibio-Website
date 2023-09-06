@@ -1,19 +1,16 @@
 let aboutFirstArray = [
   {
-    content: `P. monodon are generally found in sandy estuaries, mangroves, and the
-      coasts of Eastern Africa, Southeast Asia and Northern Australia. Upon
-      adulthood, they move to deeper waters (0- 110 meters) and live on muddy or
-      rocky bottoms. The P. monodon has shown to be nocturnal in the wild,
-      burrowing into substrate during the day, and coming out at night to
-      feed P. monodon typically feed on detritus, polychaete worms, mollusks,
-      small crustaceans and algae.`,
+    content: `P. monodon, or giant tiger prawns, 
+    inhabit sandy estuaries and coasts in Eastern Africa, 
+    Southeast Asia, and Northern Australia. 
+    They shift to deeper waters as adults (up to 110 meters), exhibiting nocturnal behavior, 
+    and feed on detritus, worms, mollusks, crustaceans, and algae.`,
   },
   {
-    content: ` It can tolerate a wide range of salinity, 0.2 to 70 ppt. Salinity within
-      the range of 10 to 25 ppt has no appreciable effect on growth when food is
-      sufficient. Growth is reported to be slower at very low salinities. Food
-      conversion ratios are favourable and it is hardy and not greatly disturbed
-      by handling.`,
+    content: ` The species tolerates salinity from 0.2 to 70 ppt, 
+    with 10 to 25 ppt range not affecting growth significantly with adequate food.
+     Slowdown in growth occurs at very low salinities, but it is not greatly disturbed in handling,
+     displaying favorable food conversion ratios and resilience.`,
   },
 ];
 
@@ -24,19 +21,11 @@ let aboutSecondArray = [
     size and taste of P. monodon, making it a suitable choice for certain market segments. `,
   },
   {
-    content: ` P. monodon has been traditionally cultivated in India for many years, 
-    and there is an existing market for it. Farmers who have experience and established 
-    market connections with P. monodon may find it more convenient to continue cultivating this species. `,
-  },
-  {
-    content: `In regions where P. monodon farming has been prevalent, farmers may have acquired substantial knowledge and expertise in the specific farming practices required for this species. 
-        They may be more comfortable and efficient in handling P. monodon compared to vannamei.`,
-  },
-  {
-    content: ` While P. monodon has faced disease challenges, some strains or stocks of SPF P. monodon 
-    are developed to be relatively resistant to certain diseases, including the white spot syndrome virus (WSSV). 
-    These disease-resistant strains can offer advantages in terms of survival rates and reduced disease-related losses. `,
-  },
+    content: ` P. monodon has been traditionally cultivated in India for many years,
+     and there is an existing market for it.
+      Farmers may have acquired substantial knowledge and expertise in the specific farming practices.
+       They may be more comfortable and efficient in handling Monodon compared to Vannamei. `,
+  }
 ];
 let aboutThirdArray = [
   {
@@ -48,8 +37,7 @@ let aboutThirdArray = [
   {
     title: 'Export Markets',
     content: ` P. monodon has been popular in international export markets, particularly in regions like the United States, Europe, and Japan. These markets often have specific requirements for shrimp size,
-        quality, and taste, and P. monodon has historically met those criteria. Specialized infrastructure and management practices, including extensive farming systems and suitability 
-        of such farming systems influences the demand for P. monodon in different regions.  `,
+        quality, and taste, and P. monodon has historically met those criteria. `,
   },
   {
     title: 'Associated Price',
@@ -60,63 +48,47 @@ let aboutThirdArray = [
 let aboutFourthArray = [
   {
     title: 'Disease Management',
-    content: `Our Specific pathogen-free (SPF) shrimp seeds are
-        produced through advanced techniques and technologies tested to have
-        reduced disease risks. Our seeds can contribute to improved survival
-        rates and minimize disease-related losses.`,
+    content: `Resistance to infestations by epicommensals like Zoothamnium (fungus), EHP, 
+    white fecal syndrome etc., results in avoidance of unwanted chemical treatments 
+    that may have potential food safety risks.`,
   },
   {
-    title: 'Generic Improvement',
-    content: `Our focus on selective breeding programs to develop
-        improved strains of shrimp with desirable traits, such as faster growth,
-        disease resistance, and higher yield. These genetically improved seeds
-        can enhance the productivity and profitability of shrimp farming.`,
+    title: 'High Survival',
+    content: `Our SPF seed adapts to diverse environments and strong immune responses. 
+    Improved management practices and optimized conditions enhance its resilience,
+     making it a preferred choice for successful shrimp farming with reduced mortality. `,
   },
   {
-    title: 'Consistency and uniformity',
-    content: `We provide high-quality seeds strive to
-        maintain consistency and uniformity in terms of size, growth rate, and
-        genetic characteristics of the seeds. This allows farmers to achieve
-        more predictable and standardized results in their production cycles.`,
+    title: 'Good Growth',
+    content: `Leveraging efficient nutrient utilization
+     and well suited physiology for rapid development is the inherent nature of our seeds. This translates to shorter production cycles
+     and increased yield, contributing to its viability as a cultured species.`,
   },
   {
-    title: 'Quality Control',
-    content: `By using hatchery-produced seeds, farmers can reduce the risk of genetic
-        degradation and maintain the quality and performance of their stocks.`,
+    title: 'Robustness of Animal',
+    content: `Resilient seed quality is attributed due to its physiological adaptability, effective immune responses, 
+    and genetic traits that contribute 
+    to its overall hardiness and ability to thrive even under suboptimal conditions.`,
   },
   {
-    title: 'Technical support',
-    content: `We offer technical support and guidance to farmers,
-        including advice on farm management practices, feeding regimes, disease
-        prevention, and water quality management. This assistance can be
-        valuable, especially for new or less-experienced farmers.`,
+    title: 'Uniformity',
+    content: `Uniform size and consistent coloration, factors are highly valued in commercial aquaculture. 
+    This uniformity enhances market appeal and streamlines production processes, 
+    making it easier to manage and market our species.`,
   },
 ];
 let featuresData = [
   {
-    title: ' Proximity to Markets',
-    content: `Chennai has a well-developed transportation infrastructure, including road, rail, and sea connectivity. This allows for efficient distribution of shrimp larvae or post larvae to shrimp farmers and aquaculture operations across India and even export markets. Proximity to major 
-            cities and ports facilitates easy access to markets for both domestic and international trade. ',`,
+    title: ' Marine Resource',
+    content: `Accessibility to a diverse range of marine resources and favorable environmental conditions for shrimp aquaculture. The coastal waters offer suitable salinity levels, water temperature, and nutrient-rich conditions necessary for shrimp hatchery operations.`,
   },
   {
-    title: 'Availability of Skilled Workforce',
-    content: `Chennai is a major urban center with a skilled labor force, including professionals experienced in aquaculture, marine sciences, and hatchery operations. Access to a pool of trained personnel
-      can be advantageous in efficiently managing and operating a shrimp hatchery. `,
+    title: 'Proximity',
+    content: `Chennai has well-developed transportation infrastructure, including road, rail, and sea connectivity. Proximity to major cities and ports facilitates easy access to markets for both domestic and international trade.`,
   },
   {
     title: 'Research & Department',
-    content: `Chennai hosts several renowned research institutes, universities, and aquaculture research centers such as ICAR, CIBA, TNFU. Collaborations with these institutions can provide access to cutting-edge research, technology transfer, and expertise in shrimp genetics, selective 
-                  breeding, disease management, and sustainable aquaculture practices. `,
-  },
-  {
-    title: 'Government Support',
-    content: `The state government of Tamil Nadu, where Chennai is located, has shown support for the aquaculture industry. They have implemented various policies and initiatives to promote and regulate the shrimp farming sector. This support can provide a 
-            conducive business environment for setting up and operating a shrimp hatchery. `,
-  },
-  {
-    title: 'Infrastructure & Services',
-    content: `Chennai offers access to essential infrastructure and services required for shrimp hatchery operations, including reliable power supply, water resources, waste management systems, and veterinary support. The presence of hatchery equipment suppliers, 
-    feed manufacturers, and other necessary service providers further facilitates smooth operations. `,
+    content: `AQF for quarantine is only located in Chennai for the entire of India. Chennai hosts several research through ICAR, CIBA, TNFU. Collaborations can provide access to cutting-edge research, technology transfer, and expertise in shrimp genetics, selective breeding, disease management, and sustainable aquaculture practices.`,
   },
 ];
 export const Properties = Object.freeze({
