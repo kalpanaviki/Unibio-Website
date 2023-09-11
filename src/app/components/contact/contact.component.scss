@@ -15,9 +15,22 @@
 }
 
 img{
-  padding:1rem 1rem 1rem 0;
-  height:400px;
+  padding:0;
+  width:80%;
 }
+.logo3,.logo4{
+  max-width:20%;
+  height: 100%;
+  padding-left: 15px;
+}
+.logo2{
+  max-width:20%;
+  height: 82px;
+}
+.logo1{
+  height:330px;
+}
+
 .card-title{
   color: #000000;
   padding-left: 16px;
@@ -25,12 +38,12 @@ img{
 }
 .card-text1{
   color:#000000;
-  font-size: 18px;
+  font-size: 25px;
   font-weight:500;
   text-decoration: none;
 }
-.card-text2{
-  color:#000000;
-  font-size: 18px;
-  font-weight:800;
+h2{
+  font-weight: bold;
+  font-size: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }

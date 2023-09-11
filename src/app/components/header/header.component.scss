@@ -18,12 +18,13 @@
       a {
         color: #fff;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 25px;
       }
       &:hover {
         border-bottom: 1px solid #031a3f;
         a {
-          color: #031a3f;
+          color: rgb(0,250,154);
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         }
       }
     }

@@ -11,6 +11,22 @@
 <div>
 </div>
 
+
+<!--Buisness-->
+
+<div class="container-fluid main-first">
+    <h2>Penaeus Monodon</h2>
+    <p>
+      Commonly known as the giant tiger prawn or black tiger shrimp, is a species of marine crustacean that holds significant economic and culinary importance.
+    Native to the Indo-Pacific region, renowned for its large size, 
+    distinctive dark stripes on its shell, and succulent meat.  
+    </p>
+
+    <button type="button" class="btn btn-outline-info" routerLink="/about">
+      Learn More <i class="bi bi-arrow-right-square-fill"></i>
+    </button>
+  </div>
+  
 <!--Established-->
 <div class="container-fluid main-esta">
   <div class="card-container">
@@ -38,20 +54,33 @@
    </div>
   </div>
 
-<!--Buisness-->
+  <!--Associates-->
+<div class="container-fluid main-asso" id="Associates" >
+  <div class="slideshow-background"></div>
+  <div class="slideshow-content">
+   <h2>Associate Hatcheries</h2><br>
+   <div class="mySlides fade-once" *ngFor="let slide of slides; let i = index" >
+    <p class="numbertext">{{ i + 1 }} / {{ slides.length }}</p>
+    <img [src]="slide.imageSrc" class="slide-image" style="width:100%; height:400px;">
+    <p class="text1">{{ slide.caption1 }}</p>
+    <p class="text2">{{slide.caption2 }}</p>
+    
+   </div>
 
-<div class="container-fluid main-first">
-    <h2>Penaeus Monodon</h2>
-    <p>
-      Commonly known as the giant tiger prawn or black tiger shrimp, is a species of marine crustacean that holds significant economic and culinary importance.
-    Native to the Indo-Pacific region, renowned for its large size, 
-    distinctive dark stripes on its shell, and succulent meat.  
-    </p>
-
-    <button type="button" class="btn btn-outline-info" routerLink="/about">
-      Learn More <i class="bi bi-arrow-right-square-fill"></i>
-    </button>
+   <!-- Next and previous buttons -->
+   <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+   <a class="next" (click)="plusSlides(1)">&#10095;</a>
+   
   </div>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" *ngFor="let slide of slides; let i = index" (click)="currentSlide(i + 1)"></span>
+
+</div>
+<br>
+</div>
+ 
 
   <!--Sustainability-->
 
@@ -65,7 +94,7 @@
         safeguarding both ecological conservation and the continued success
          of P. monodon cultivation.  
     </p>
-    <button type="button" class="btn btn-outline-info" routerLink="/sustainability">
+    <button type="button" class="btn btn-outline-info" routerLink="/sustain">
       Learn More <i class="bi bi-arrow-right-square-fill"></i>
     </button>
   </div>
@@ -86,6 +115,7 @@
       Learn More <i class="bi bi-arrow-right-square-fill"></i>
     </button>
   </div>
+  
 
 
 <!--Contact-->

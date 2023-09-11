@@ -6,6 +6,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { ResourceComponent } from './resource/resource.component';
+import { SustainabilityComponent } from './sustainability/sustainability.component';
 
 const routes: Routes = [
   { path: '', component: MainComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'welcome', component: WelcomeComponent},
   {path: 'privacy', component: PrivacyComponent},
   {path: 'terms', component: TermsComponent},
-  {path: 'resource', component: ResourceComponent}
+  {path: 'resource', component: ResourceComponent},
+  {path: 'sustain', component: SustainabilityComponent}
 ];
 
 @NgModule({
