@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit, HostListener } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 @Component({
   selector: 'app-main',
@@ -42,11 +42,13 @@ export class MainComponent implements OnInit{
   ];
 
   slideIndex = 1;
+  isLaptop = false;
+  isMobile = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.checkScreenSize();
   }
   ngAfterViewInit(): void {
     setTimeout(() => {
@@ -83,5 +85,23 @@ export class MainComponent implements OnInit{
 
     slides[this.slideIndex - 1].style.display = "block";
     dots[this.slideIndex - 1].className += " active";
+  }
+
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    this.checkScreenSize();
+  }
+
+
+  checkScreenSize(): void {
+    const screenWidth = window.innerWidth;
+    const breakpoint = 468;
+
+    this.isLaptop = screenWidth > breakpoint;
+    this.isMobile = screenWidth <= breakpoint;
+
+    console.log('isLaptop:', this.isLaptop);
+    console.log('isMobile:', this.isMobile);
   }
 }

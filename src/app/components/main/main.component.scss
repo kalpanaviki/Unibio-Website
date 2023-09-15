@@ -11,7 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  padding: 2rem;
   color: #f2f2f2e0;
   font-size: 25px;
   font-weight: 500;
@@ -24,6 +24,27 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
 
+
+  /* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+     .main-first{
+      height: 55vh;
+      font-size: 16px;
+      font-weight: 400;
+      background-size:cover ;
+      background-repeat: no-repeat; 
+      background-position: center right 30%;
+      h2{
+          font-size: 23px;
+          padding: 0 0 1rem 0;
+      }
+    }
+      
+     }
+
+
+
+
 .main-second{
   background-image: url("../../../assets/images/Windmill.jpg");
   height: 120vh;
@@ -33,7 +54,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   color: #fff;
   font-size: 25px;
   font-weight: 500;
@@ -44,7 +65,26 @@
   font-size: 3.5rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
+   
 }
+
+ /* Media queries for mobile phone screens*/
+ @media (max-width: 480px) {
+  .main-second{
+      height: 55vh;
+      background-size:cover ;
+      background-repeat: no-repeat; 
+      background-position: center;
+      font-size: 16px;
+      font-weight: 400;
+      h2{
+        font-size: 23px;
+        padding: 2rem 1rem 1rem 0;
+    }
+  }
+
+
+ }
 .main-third{
   background-image: url("../../../assets/images/Wallpaper Edit.png");
   height: 120vh;
@@ -54,7 +94,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   color: #fff;
   font-size: 25px;
   font-weight: 500;
@@ -68,12 +108,29 @@
     }
   }
 
+   /* Media queries for mobile phone screens*/
+ @media (max-width: 480px) {
+  .main-third{
+      height: 68vh;
+      background-size:cover ;
+      background-repeat: no-repeat; 
+      background-position: center;
+      font-size: 16px;
+      font-weight: 400;
+      h2{
+        font-size: 23px;
+        padding: 2rem 1rem 1rem 0;
+    }
+  }
+}
+
 
 .main-first .btn {
   font-size: 20px;
   margin-top: 1rem;
   color: #87cefa;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   &:hover {
@@ -85,11 +142,25 @@
     margin-left: 1rem;
   }
 }
+
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .main-first .btn {
+    font-size: 15px;
+    margin-top: 0.5rem;
+    .bi {
+      font-size: 18px;
+      margin-left: 0.5rem;
+    }
+  }
+}
+
 .main-second .btn{
    font-size: 20px;
 margin-top: 1rem;
 color: #87cefa;
 display: flex;
+position: relative;
 justify-content: center;
 align-items: center;
 &:hover {
@@ -101,11 +172,24 @@ align-items: center;
   margin-left: 1rem;
 }
 }
+
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .main-second .btn {
+    font-size: 15px;
+    margin-top: 0.5rem;
+    .bi {
+      font-size: 18px;
+      margin-left: 0.5rem;
+    }
+  }
+}
 .main-third .btn{
   font-size: 20px;
 margin-top: 1rem;
 color: #87cefa;
 display: flex;
+position: relative;
 justify-content: center;
 align-items: center;
 &:hover {
@@ -116,6 +200,17 @@ align-items: center;
  font-size: 28px;
  margin-left: 1rem;
 }
+}
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .main-third .btn {
+    font-size: 15px;
+    margin-top: 0.5rem;
+    .bi {
+      font-size: 18px;
+      margin-left: 0.5rem;
+    }
+  }
 }
 
 
@@ -159,13 +254,13 @@ align-items: center;
     img {
       object-fit:cover;
       height: 100%;
-      width: 45%;
+      width: 35%;
     }
     p {
       position: absolute;
       top: 60%;
       font-size: 25px;
-      font-weight: 500;
+      font-weight: 800;
       color: #fa0464;
     }
     button {
@@ -180,7 +275,54 @@ align-items: center;
       }
     }
   }
-  .main-asso{
+
+  /* Media queries for tablet screens*/
+@media (max-width: 768px) {
+  .welcome-content {
+    top:15%;
+    
+    img {
+    width: 75%;
+  }
+   p {
+    font-size: 40px;
+  }
+  button {
+    top: 80%;
+    font-size: 20px;
+  }
+}
+}
+
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .welcome{
+    height:55vh;
+  }
+  .welcome-content {
+    top:25%;
+
+    img {
+      top: 100%;
+  
+  }
+   p {
+    font-size: 25px;
+  }
+  button {
+    top:80%;
+    font-size: 15px;
+  }
+  .bi {
+    margin-left: 0.5rem;
+  }
+}
+}
+
+
+
+  .main-asso
+  {
     position: relative;
     font-size: 25px;
     font-weight: 500;
@@ -192,6 +334,19 @@ align-items: center;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
   }
+  
+   /* Media queries for mobile phone screens*/
+ @media (max-width: 480px) {
+  .main-asso{
+      font-size: 16px;
+      font-weight: 400;
+      h2{
+        font-size: 23px;
+        padding: 2rem 1rem 1rem 0;
+    }
+  }
+}
+
   
   .slideshow-background {
     background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8));
@@ -311,6 +466,56 @@ align-items: center;
     to {opacity: 1;}
   }
 
+  /* Styling for mobile-specific content */
+.mobile-image-scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 0; 
+}
+
+.mobile-slide {
+  flex: 0 0 auto;
+  width: 80vw; 
+  scroll-snap-align: start;
+  margin-right: 10px; 
+}
+
+.mobile-slide-image {
+  width: 100%;
+  height: auto; 
+}
+
+.caption-container {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Background color for captions */
+  color: #fff; /* Text color for captions */
+  padding: 30px; /* Adjust padding as needed */
+  box-sizing: border-box;
+  
+}
+
+.text1{
+  margin:0; 
+  font-size:18px;
+  padding:5px;
+}
+ .text2 {
+  font-size:14px;
+  margin: 0; 
+}
+
+.mobile-slide {
+  position: relative; /* Make the parent container relative for absolute positioning */
+  width: 100%;
+  height: 300px; /* Adjust the height as needed */
+}
+
   .main-esta{
     background: linear-gradient(#e79766,rgb(228, 84, 74));
   .card-container {
@@ -350,4 +555,23 @@ align-items: center;
     font-weight:800;
   }
 
+  /* Media Query for screens between 768px and 1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-container {
+    grid-template-columns: 33% 33% 33%;
+  }
 }
+
+/* Media Query for screens up to 767px */
+@media screen and (max-width: 767px) {
+  .card-container {
+    grid-template-columns: 100%;
+  }
+  
+  .card {
+    margin: 1rem;
+  }
+
+
+}
+  }
