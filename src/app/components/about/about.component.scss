@@ -12,7 +12,7 @@
 .monodon {
   background-color: #0c2323;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 60% 40%;
   padding-inline: 3rem;
   h2 {
     margin-top: 4rem;
@@ -24,14 +24,42 @@
     text-align: justify;
     color: #d5d9d7;
     font-size: 1.5rem;
-    font-weight: 400;
   }
   .img-container {
-    border-radius: 100% 0 0 0;
+    border-radius:0;
     background-image: url("../../../assets/images/Picture27.png");
-    rotate: 0deg;
     background-size: 100% 100%;
     margin: 5rem 0rem 2rem 0rem;
+  }
+}
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .monodon{
+      height: 120vh;
+      font-size: 16px;
+      font-weight: 400;
+      display: grid;
+      grid-template-columns: 100%;
+      padding-inline: 1rem;
+      h2{
+        margin-top:2rem;
+        font-size: 23px;
+    }
+    p {
+      position: relative;
+      text-align: justify;
+      font-size: 16px;
+      font-weight: 400;
+      width: 100%;
+    }
+    .img-container {
+      position: relative;
+      border-radius:0;
+      width: 50%;
+      height:50%;
+      border: 1px solid red;
+      margin: 2rem 0;
+    }
   }
 }
 .why {
