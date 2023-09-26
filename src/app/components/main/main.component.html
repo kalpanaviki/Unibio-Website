@@ -54,49 +54,37 @@
    </div>
   </div>  
 
+   <!--Shrimponomy-->
+   <div class="container-fluid main-third" id="shrimponomy">
+    <h2>Monodon 101</h2>
+    <p>
+      Dive into a treasure trove of information on shrimp species, 
+      pond management, water quality, disease prevention, and 
+      sustainable practices. Our articles, guides, and expert
+       insights cover everything from selecting the right shrimp
+        species for your farm to optimizing feeding schedules 
+        and maintaining healthy shrimp populations. We believe 
+        that well-informed farmers are the key to a 
+      sustainable and prosperous shrimp aquaculture industry.
+    </p>
+    <button type="button" class="btn btn-outline-info" routerLink="/resource">
+      Learn More <i class="bi bi-arrow-right-square-fill"></i>
+    </button>
+  </div>
+  
   <!--Associates-->
 <div class="container-fluid main-asso" id="Associates" >
-  <div class="slideshow-background"></div>
-  <div class="slideshow-content">
    <h2>Associate Hatcheries</h2><br>
-   <div *ngIf="isLaptop">
-   <div class="mySlides fade-once" *ngFor="let slide of slides; let i = index" >
-    <p class="numbertext">{{ i + 1 }} / {{ slides.length }}</p>
-    <img [src]="slide.imageSrc" class="slide-image" style="width:100%; height:400px;">
-    <p class="text1">{{ slide.caption1 }}</p>
-    <p class="text2">{{slide.caption2 }}</p>
-    
-   </div>
-
-   <!-- Next and previous buttons -->
-   <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
-   <a class="next" (click)="plusSlides(1)">&#10095;</a>
-   
-     <!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" *ngFor="let slide of slides; let i = index" (click)="currentSlide(i + 1)"></span>
-
-</div>
-  </div>
-
-</div>
-
-<div *ngIf="isMobile">
-  <div class="mobile-image-scroll-container">
-    <div class="mobile-slide" *ngFor="let slide of slides; let i = index">
-      <div class="caption-container">
-        <p class="text1">{{ slide.caption1 }}</p>
-        <p class="text2">{{ slide.caption2 }}</p>
+    <div class="card-container">
+      <div class="card" *ngFor="let slide of slides">
+        <img [src]="slide.imageSrc" alt="Slide Image" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-text1">{{ slide.caption1 }}</h5>
+          <p class="card-text2">{{ slide.caption2 }}</p>
+          <a href="#" class="btn btn-primary">Learn more</a>
+        </div>
       </div>
-      <img [src]="slide.imageSrc"class="mobile-slide-image" style="width:100%; height:300px;">
     </div>
-  </div>
-
-</div>
-
-
-
-
 <br>
 </div>
  
@@ -118,23 +106,7 @@
     </button>
   </div>
 
-  <div class="container-fluid main-third" id="shrimponomy">
-    <h2>Monodon 101</h2>
-    <p>
-      Dive into a treasure trove of information on shrimp species, 
-      pond management, water quality, disease prevention, and 
-      sustainable practices. Our articles, guides, and expert
-       insights cover everything from selecting the right shrimp
-        species for your farm to optimizing feeding schedules 
-        and maintaining healthy shrimp populations. We believe 
-        that well-informed farmers are the key to a 
-      sustainable and prosperous shrimp aquaculture industry.
-    </p>
-    <button type="button" class="btn btn-outline-info" routerLink="/resource">
-      Learn More <i class="bi bi-arrow-right-square-fill"></i>
-    </button>
-  </div>
-  
+ 
 
 
 <!--Contact-->

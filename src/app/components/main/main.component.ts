@@ -38,7 +38,6 @@ export class MainComponent implements OnInit{
       caption1: 'Golden Marine Harvest Private Limited',
       caption2: 'Anumandai, Tamil Nadu'
     },
-    // Add more slide objects as needed
   ];
 
   slideIndex = 1;
