@@ -230,12 +230,11 @@ align-items: center;
   width: 100%;
   background-size: cover;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 .welcome::before {
   content: "";
-  background-image: url("../../../assets/images/Picture22.png");
-  opacity: 0.6; 
+  background-image: url("../../../assets/images/ChennaiHatcherySideview.jpg");
+  opacity: 0.5; 
   position: absolute;
   background-size: cover;
   top: 0;
@@ -278,8 +277,10 @@ align-items: center;
 
   /* Media queries for tablet screens*/
 @media (max-width: 768px) {
+  
   .welcome-content {
     top:15%;
+  
     
     img {
     width: 75%;
@@ -300,7 +301,7 @@ align-items: center;
     height:55vh;
   }
   .welcome-content {
-    top:25%;
+    top:15%;
 
     img {
       top: 100%;
@@ -310,7 +311,7 @@ align-items: center;
     font-size: 25px;
   }
   button {
-    top:80%;
+    top: 80%;
     font-size: 15px;
   }
   .bi {
@@ -401,15 +402,15 @@ img{
     padding: 1rem;
     .card {
       position: relative;
-      margin: 3rem;
-      background-color: #f2f2f2;
+      margin: 5rem;
+      background-color: #dddddd;
       transition: transform 0.3s ease; 
       overflow: hidden; 
     }
   }
 
   .card:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     transform-origin: center center;
   }
 
@@ -420,7 +421,7 @@ img{
   }
 
   .card-text1{
-    color:rgb(255, 153, 0);
+    color:rgb(255, 145, 0);
     font-family: 'Bauhaus Light';
     font-size: 21px;
     font-weight:800;

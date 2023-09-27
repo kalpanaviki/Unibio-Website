@@ -269,7 +269,7 @@
         margin-top:1rem;
         font-size: 23px;
         font-weight: 600;
-        margin: 0rem 1rem 1rem 4rem;
+        margin: 0rem 0rem 1rem 7rem;
       }
       .accordion {
         &-item {
@@ -288,7 +288,6 @@
     }
     .content-image {
       display: flex;
-     
       align-items: center;
       justify-content: center;
       flex-direction:row;
@@ -298,7 +297,8 @@
       height: 5rem;
       img {
         width: 100%;
-        margin-left: 0rem;
+        margin-left: -30rem;
+        margin-top: 0.8rem;
       }
     }
   }

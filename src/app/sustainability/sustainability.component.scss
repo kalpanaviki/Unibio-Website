@@ -39,6 +39,36 @@ img {
     justify-content: center;
 }
 
+
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .content {
+    display:grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 15%;
+}
+.title {
+  font-size: 23px;
+  font-weight: 600;
+  padding: 1rem 1rem 0rem 1rem;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0rem 1rem;
+  margin: 0rem 1rem 0rem 0rem;
+}
+img {
+  width: 30px;
+}
+}
+
+
+
 .main-sus1{
     background-color:  #767db9;
     .card-container {
@@ -77,6 +107,37 @@ img {
     }
 }
 
+
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .main-sus1{
+    .card-container {
+      display: grid;
+      grid-template-columns: 100%;
+      width: 100%;
+      gap: 2rem;
+      .card {
+        margin: 1rem;
+        border-radius: 25px;
+      }
+    }
+  
+  
+    .card-title{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card-text{
+      font-size: 16px;
+      font-weight: 400;
+    }
+}
+
+}
+
+
+
+
 .main-sus2{
     background-color:  #ffffff;
     .card-container {
@@ -113,6 +174,33 @@ img {
       font-size: 18px;
       font-weight:300;
     }
+}
+
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .main-sus2{
+    .card-container {
+      display: grid;
+      grid-template-columns: 100%;
+      width: 100%;
+      gap: 2rem;
+      .card {
+        margin: 1rem;
+        border-radius: 25px;
+      }
+    }
+  
+  
+    .card-title{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card-text{
+      font-size: 16px;
+      font-weight: 400;
+    }
+}
+
 }
 .main-sus3{
     background-color:  #cdf3e5;
@@ -188,4 +276,30 @@ img {
       font-size: 18px;
       font-weight:300;
     }
+}
+/* Media queries for mobile phone screens*/
+@media (max-width: 480px) {
+  .main-sus4{
+    .card-container {
+      display: grid;
+      grid-template-columns: 100%;
+      width: 100%;
+      gap: 2rem;
+      .card {
+        margin: 1rem;
+        border-radius: 25px;
+      }
+    }
+  
+  
+    .card-title{
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .card-text{
+      font-size: 16px;
+      font-weight: 400;
+    }
+}
+
 }
