@@ -73,20 +73,7 @@
   </div>
   
   <!--Associates-->
-<div class="container-fluid main-asso" id="Associates" >
-   <h2>Associate Hatcheries</h2><br>
-    <div class="card-container">
-      <div class="card" *ngFor="let slide of slides">
-        <img [src]="slide.imageSrc" alt="Slide Image" class="card-img-top">
-        <div class="card-body">
-          <h5 class="card-text1">{{ slide.caption1 }}</h5>
-          <p class="card-text2">{{ slide.caption2 }}</p>
-          <a routerLink="/resource" class="btn btn-primary">Learn more</a>
-        </div>
-      </div>
-    </div>
-<br>
-</div>
+  <app-assosciates></app-assosciates>
  
 
   <!--Sustainability-->

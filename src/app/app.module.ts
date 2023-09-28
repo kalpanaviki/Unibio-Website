@@ -16,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon';
 import { ResourceComponent } from './resource/resource.component';
 import { SustainabilityComponent } from './sustainability/sustainability.component';
+import { AssosciatesComponent } from './components/assosciates/assosciates.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SustainabilityComponent } from './sustainability/sustainability.compone
     TermsComponent,
     ResourceComponent,
     SustainabilityComponent,
+    AssosciatesComponent,
    
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule,MatButtonModule,MatIconModule],
