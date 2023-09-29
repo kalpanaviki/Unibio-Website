@@ -1,8 +1,20 @@
 <app-header></app-header>
 <section>
 <div class="button-row">
-   <a mat-raised-button class="custom-button" color="warn" href="http://unibioindia.in" target="_blank"><img class="com" src="../assets/images/communication.png" >Seed Enquiry</a>
+   <a mat-raised-button class="custom-button" color="warn" (click) = "validateandsave()"><img class="com" src="../assets/images/communication.png" >Seed Enquiry</a>
   </div>
+  <table #divEnqy align="center" class="table table-condensed table-bordered" style="position:fixed;display:none;z-index:15;">
+    <tr>
+      <td align="right">
+       <mat-icon style="height: 40px; background-color: rgb(207, 33, 33); color:#ffffff;font-weight: 800;" (click)="closeEnqy()">X</mat-icon>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <iframe #if1></iframe>
+      </td>
+    </tr>
+  </table>
 </section>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
