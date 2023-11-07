@@ -18,7 +18,7 @@
   }
   p {
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 25px;
     font-weight: 400;
   }
   .img-container {
@@ -40,14 +40,14 @@
   padding-inline: 3rem;
   
   h2 {
-    margin-top: 4rem;
+    margin-top: 1rem;
     color: #6dcd9a;
   }
   p {
     color: #d5d9d7;
   }
   .img-container {
-    margin: 5rem 0rem 2rem 0rem;
+    margin: 2rem 0rem 2rem 0rem;
   }
   img {
     height: 32rem;
@@ -64,7 +64,7 @@
     text-align: left;
   }
   p {
-    color: #545454;
+    color: #363636;
   }
 
   img {
@@ -111,8 +111,11 @@
 /* Media queries for mobile phone screens*/
 @media (max-width: 480px) {
   .monodon{
-      height: 120vh;
-      padding-top:5rem;
+      height: 90vh;
+      padding-top:1rem;
+      h2 {
+        margin-top: 0;
+      }
       
     .img-container {
       padding: 0rem 1rem 0rem 1rem;
@@ -128,7 +131,7 @@
 /* Media queries for mobile phone screens*/
 @media (max-width: 480px) {
   .why{
-      height: 130vh;
+      height: 180vh;
       h2{
         margin-top:1rem;
     }  
@@ -161,7 +164,7 @@
   p {
     text-align: justify;
     color: #000000;
-    font-size: 1.5rem;
+    font-size: 25px;
     font-weight: 400;
   }
   .card-container {
@@ -222,7 +225,7 @@
         button {
           font-weight: 700;
           color: #056a4c;
-          text-align: center;
+          text-align: left;
           font-size: 2rem;
           outline: none;
           box-shadow: none;

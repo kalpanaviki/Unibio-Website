@@ -1,8 +1,16 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed">
+<div class="top-menu navbar1">
+  <a class="navbar1-brand" href="#">
+    <img src="../assets/images/UniBio_nobg.png" />
+    <p>Welcome to UniBio (India) Hatcheries</p>
+  </a>
+</div>
+
+<div class="sticky-menu">
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <h2>UniBio (India) Hatcheries</h2>
-    </a>
+    <button class="navbar-brand" href="tel:+91 89257 74485"><img class="cnt_svg" src="../assets/images/call_svg.svg" style="height: 20px;width: 30px;" />+91 89257 74485
+    </button>
+  
     <button
       class="navbar-toggler"
       type="button"
@@ -15,21 +23,23 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" routerLink="">HOME</a>
+          <a class="nav-link" routerLink="" (click)="navigateAndCloseMenu('/')">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/welcome">ABOUT US</a>
+          <a class="nav-link" routerLink="/welcome" (click)="navigateAndCloseMenu('/welcome')">ABOUT US</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/sustain">SUSTAINABILTY</a>
+          <a class="nav-link" routerLink="/sustain" (click)="navigateAndCloseMenu('/sustain')">SUSTAINABILITY</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/resource">MONODON 101</a>
+          <a class="nav-link" routerLink="/resource" (click)="navigateAndCloseMenu('/resource')">MONODON 101</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">CONTACT</a>
+          <a class="nav-link" (click)="scrollToSection('contact')">CONTACT</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+</div>
+

@@ -1,80 +1,96 @@
 let aboutFirstArray = [
   {
-    content: `P. monodon, or giant tiger prawns, 
-    inhabit sandy estuaries and coasts in Eastern Africa, 
-    Southeast Asia, and Northern Australia. 
-    They shift to deeper waters as adults (up to 110 meters), exhibiting nocturnal behavior, 
-    and feed on detritus, worms, mollusks, crustaceans, and algae.`,
+    content: `P. monodon inhabit sandy estuaries and coasts in Eastern Africa, Southeast Asia, and Northern Australia.
+     They shift to deeper waters (up to 110 meters) as adults, exhibiting nocturnal behaviour, 
+     and feed on detritus, worms, mollusks, crustaceans, and algae.`,
   },
   {
-    content: ` The species tolerates salinity from 0.2 to 70 ppt, 
-    with 10 to 25 ppt range not affecting growth significantly with adequate food.
-     Slowdown in growth occurs at very low salinities, but it is not greatly disturbed in handling,
-     displaying favorable food conversion ratios and resilience.`,
+    content: ` The species tolerates salinity from 0.2 to 70 ppt, with 10 to 25 ppt 
+    range as optimum in aquaculture systems resulting in favorable food conversion ratios and resilience.`,
   },
 ];
 
 let aboutSecondArray = [
   {
-    content: ` P. monodon is a larger shrimp species compared to vannamei, which 
-    can result in potentially higher market value. Some Indian consumers prefer the larger 
-    size and taste of P. monodon, making it a suitable choice for certain market segments. `,
+    content: ` P. monodon is a larger shrimp species compared to vannamei, 
+    which can result in potentially higher market value. Some consumers prefer the larger size and taste of 
+    P. monodon, making it a suitable choice for certain market segments. `,
   },
   {
-    content: ` P. monodon has been traditionally cultivated in India for many years,
-     and there is an existing market for it.
-      Farmers may have acquired substantial knowledge and expertise in the specific farming practices.
-       They may be more comfortable and efficient in handling Monodon compared to Vannamei. `,
-  }
+    content: ` P. monodon has been traditionally cultivated in India for many years, 
+    and there is a clear preference in Japan, China, European countries etc. `,
+  },
+  {
+    content: ` Over the last two decades, Indian farmers acquired substantial knowledge in culturing
+     SPF shrimps following biosecurity protocols, 
+    and this expertise helps in easily changing to SPF P. monodon. `,
+  },
+  {
+    content: ` Farmers and processors in India already start to recognize the shrimp grown out of Unibio SPF seed for its high survival, 
+    good growth, robustness, uniformity in size and colouration. 
+    It is also recognized by Indian farmers as resistant to many of the disease conditions that are 
+    plaguing the vannamei shrimp farming. This advantage with Unibio seed results in avoidance of use 
+    of many unwanted chemical treatments that may have the potential food safety risks. `,
+  },
 ];
 let aboutThirdArray = [
   {
     title: 'Market Preference',
     content: `The demand for P. monodon is influenced by regional and cultural preferences. 
-       In certain markets, consumers have a preference for larger-sized shrimp, which works in favor of 
-     P. monodon due to its potential for attaining a larger size compared to some other shrimp species. `,
+    In certain markets, consumers have a preference for larger-sized shrimp, which works in favor of P. monodon due
+     to its potential for attaining a larger size compared to some other shrimp species. `,
   },
   {
     title: 'Export Markets',
-    content: ` P. monodon has been popular in international export markets, particularly in regions like the United States, Europe, and Japan. These markets often have specific requirements for shrimp size,
-        quality, and taste, and P. monodon has historically met those criteria. `,
+    content: ` P. monodon has been popular in international export markets, particularly
+     in regions like the United States, Europe, and Japan. These markets
+      often have specific requirements for shrimp size, quality, and taste,
+     and P. monodon has historically met those criteria. `,
   },
   {
     title: 'Associated Price',
-    content: ` The price of P. monodon also impacts its demand. In some cases, the larger size and higher production costs associated with P. monodon can make it relatively more expensive compared to other shrimp species. 
-     Effectively this price difference sets the way for demand and market competitiveness. `,
+    content: ` The price of P. monodon also impacts its demand. 
+    In some cases, the larger size and higher production costs associated 
+    with P. monodon can make it relatively more expensive compared to other shrimp species. 
+    Effectively this price difference sets the way for demand and market competitiveness.`,
   },
 ];
 let aboutFourthArray = [
   {
-    title: 'Disease Management',
-    content: `Resistance to infestations by epicommensals like Zoothamnium (fungus), EHP, 
-    white fecal syndrome etc., results in avoidance of unwanted chemical treatments 
-    that may have potential food safety risks.`,
+    title: 'Disease Resistance',
+    content: `Unibio’s SPF monodon seeds are recognized by farmers as refractory
+     to some of the most prevalent diseases causing pathogens like EHP, 
+     which is associated with white fecal syndrome. 
+     It is also resistant to infestations by epicommensals like Zoothamnium (fungus).
+     These characteristics result in avoidance of unwanted chemical treatments during culture.`,
   },
   {
     title: 'High Survival',
-    content: `Our SPF seed adapts to diverse environments and strong immune responses. 
-    Improved management practices and optimized conditions enhance its resilience,
-     making it a preferred choice for successful shrimp farming with reduced mortality. `,
+    content: `Unibio’s SPF monodon seeds adapt well to reasonable fluctuations
+     in water quality parameters resulting in higher survival. 
+     Improved pond management practices coupled with optimal water quality enhance 
+    its resilience, making it the preferred choice for successful shrimp farming.`,
   },
   {
     title: 'Good Growth',
-    content: `Leveraging efficient nutrient utilization
-     and well suited physiology for rapid development is the inherent nature of our seeds. This translates to shorter production cycles
-     and increased yield, contributing to its viability as a cultured species.`,
+    content: `P. monodon as a species has potential to grow bigger and faster, 
+    especially at lower stocking densities. Leveraging efficient
+     nutrient assimilation from a balanced formulated feed,
+     Unibio SPF can achieve good growth rates with better feed conversion.`,
   },
   {
     title: 'Robustness of Animal',
-    content: `Resilient seed quality is attributed due to its physiological adaptability, effective immune responses, 
-    and genetic traits that contribute 
-    to its overall hardiness and ability to thrive even under suboptimal conditions.`,
+    content: `Thanks to its genetic traits, Unibio SPF monodon seeds are resilient and active 
+    with effective immune responses contributing to its overall hardiness and 
+    ability to thrive even under suboptimal conditions.`,
   },
   {
-    title: 'Uniformity',
-    content: `Uniform size and consistent coloration, factors are highly valued in commercial aquaculture. 
-    This uniformity enhances market appeal and streamlines production processes, 
-    making it easier to manage and market our species.`,
+    title: 'Uniformity in size and colouration',
+    content: `Uniformity in size and consistency in coloration of harvested shrimp are highly
+     valued by the processing and buying companies. 
+     This enhances the appeal and streamlines production processes, making it easier to manage and market. 
+     It is heartening to know that Unibio bred shrimps are being recognized by the processing companies 
+     as superior shrimp.`,
   },
 ];
 let featuresData = [

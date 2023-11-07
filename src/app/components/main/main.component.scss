@@ -4,9 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 6rem;
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 300;
+  font-family: 'Brandon Grotesque2';
   h2{
   font-weight: bold;
   padding: 3rem 3rem 3rem 0;
@@ -19,11 +20,11 @@
 {
   position: relative;
   background-image: url("../../../assets/images/Monodon.jpeg");
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 80vh;
   width: 100%;
   background-blend-mode: multiply;
-  color: #f2f2f2e0;
+  color: #ffffff;
 }
 .main-first h2 {
   color: #e79766;
@@ -38,8 +39,11 @@
    font-weight: 400;
    background-size:cover ;
    background-repeat: no-repeat; 
+   padding: 2rem;
+  
    h2{
        font-size: 23px;
+       text-shadow: 0.1px 0.1px 0.3px rgba(0, 0, 0, 0.5);
    }
  }  
 }
@@ -138,14 +142,13 @@
   }
 }
 .welcome {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   background-size: cover;
   position: relative;
 }
 .welcome::before {
   content: "";
-  background-image: url("../../../assets/images/ChennaiHatcherySideview.jpg");
   opacity: 0.5; 
   position: absolute;
   background-size: cover;
@@ -155,37 +158,6 @@
   height: 100%;
   z-index: -1;
 }
-  .welcome-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 10%;
-    img {
-      object-fit:cover;
-      height: 100%;
-      width: 35%;
-    }
-    p {
-      position: absolute;
-      top: 60%;
-      font-size: 25px;
-      font-weight: 800;
-      color: #fa0464;
-    }
-    button {
-      position: absolute;
-      top: 70%;
-      font-size: 20px;
-      .bi {
-        margin-left: 1rem;
-      }
-      &:hover {
-        color: #ffffff;
-      }
-    }
-  }
   #background-video {
     position: absolute;
     top: 0;
@@ -194,13 +166,12 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    opacity: 0.5;
 }
 
 /* Media queries for mobile phone screens*/
 @media (max-width: 480px) {
   .welcome{
-    height:55vh;
+    height:30vh;
   }
   .welcome-content {
     top:20%;
@@ -222,86 +193,19 @@
     margin-left: 0.5rem;
   }
 }
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 }
 
 
 
   
 
-  .main-esta{
-    background: linear-gradient(#e79766,rgb(228, 84, 74));
-  .card-container {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    width: 100%;
-    padding: 1rem;
-    .card {
-      position: relative;
-      margin: 5rem;
-      background-color: #dddddd;
-      transition: transform 0.3s ease; 
-      overflow: hidden; 
-    }
-  }
-
-  .card:hover{
-    transform: scale(1.1);
-    transform-origin: center center;
-  }
-
-  img{
-    width:100%;
-    height:100%;
-    padding: 20px;
-  }
-
-  .card-text1{
-    color:rgb(255, 145, 0);
-    font-family: 'Bauhaus Light';
-    font-size: 21px;
-    font-weight:800;
-  }
-  .card-text2{
-    color:rgb(68, 68, 68);
-    font-size: 28px;
-    font-weight:800;
-  }
-
-
-@media screen and (max-width: 767px) {
-  .card-container {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; 
-  }
-  .card-img-top{
-    top:10%;
-    padding: 25px;
-  }
-  img{
-    width:100%;
-    height:50%;
-    padding: 1rem 1rem 1rem 1rem;
-  }
-  .card-text1{
-    font-size: 22px;
-    font-weight:800;
-  }
-  .card-text2{
-    font-size: 30px;
-    font-weight:800;
-  }
-
-  .card {
-    flex: 0 0 auto; 
-    margin-right: 5px;
-    width: 280px;
-    height:300px;
-  }
-
-  .card:last-child {
-    margin-right: 0;
-  }
-}
-  }
+ 

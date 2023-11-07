@@ -20,6 +20,12 @@ import { trigger, transition, style, animate } from '@angular/animations';
 export class AssosciatesComponent implements OnInit{
   slides = [
     {
+      imageSrc: '../assets/images/UnibioIndiafront.png',
+      caption1: 'Unibio (India) Hatcheries Pvt. Ltd.',
+      caption2: 'Mugaiyur, Tamil Nadu'
+    },
+
+    {
       imageSrc: '../assets/images/gayathri hatchery edit.jpg',
       caption1: 'Gayathri Bio Marine Private Limited',
       caption2:'Bapatla, Andhra Pradesh',

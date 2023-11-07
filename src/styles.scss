@@ -14,7 +14,13 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Brandon Grotesque2';
+  src: url('./assets/fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+       url('./assets/fonts/BrandonGrotesque-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 h1, h2, h3, h4 {
   font-family: 'Bauhaus Light', sans-serif;
 }
