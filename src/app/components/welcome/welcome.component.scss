@@ -87,76 +87,7 @@
       font-size: 1.5rem;
     }
   }
-  &-third {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    .img-tn {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 100%;
-      }
-    }
-    .divBlock {
-      position: absolute;
-      top: 27%;
-      h3 {
-        font-size: 6rem;
-        font-weight: 900;
-        color: #ffffff;
-        line-height: 0.99657568em;
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow: -0.01875em 0em 0em rgba(0, 255, 255, 1),
-          0.01875em 0em 0em rgba(255, 0, 255, 1);
-        &:first-of-type {
-          margin-bottom: 4rem;
-          margin-top: -3rem;
-        }
-      }
-    }
-    .features {
-      background: #e18e54;
-      padding: 2rem;
-      text-align: center;
-      h2 {
-        color: #fff;
-        font-size: 4rem;
-        font-weight: 700;
-      }
-      p {
-        color: #000;
-        font-size: 1.5rem;
-        margin-top: 1rem;
-        font-weight: 500;
-      }
-    }
-    .card-wrapper {
-      display: flex;
-      gap: 1rem;
-      .card {
-        width: 33%;
-        border: none;
-        background: transparent;
-        display: flex;
-        align-items: center;
-        &-title {
-          color: #fff;
-          text-transform: uppercase;
-        }
-        &-text {
-          text-align: justify;
-        }
-        img {
-          width: 5rem;
-        }
-      }
-    }
-  }
+  
 }
 /* Media queries for mobile phone screens*/
 @media (max-width: 480px) {
@@ -209,60 +140,7 @@
     }
 
 }
-&-third {
- 
-  .divBlock {
-    top: 5%;
-    h3 {
-      font-size: 23px;
-      font-weight: 900;
-      text-align: center;
-      letter-spacing: 0.5em;
-      text-transform: uppercase;
-      text-shadow: -0.11875em 0em 0em rgba(0, 255, 255, 1),
-        0.11875em 0em 0em rgba(255, 0, 255, 1);
-      &:first-of-type {
-        margin: 1rem;
-      }
-    }
-  }
-  .features {
-    h2 {
-      font-size: 25px;
-      font-weight: 600;
-      color: #000;
-    }
-    p {
-      font-size: 16px;
-        font-weight: 400;
-        margin-top: 0.5rem;
-    }
-  }
-  .card-wrapper {
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 3rem;
-    .card {
-      width: 100%;
-      border: none;
-      background: transparent;
-      display: flex;
-      align-items: center;
-      &-title {
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-weight: 400;
-      }
-      &-text {
-        text-align: justify;
-      }
-      img {
-        width: 2rem;
-      }
-    }
-  } 
-}
+
   }
 }
 
