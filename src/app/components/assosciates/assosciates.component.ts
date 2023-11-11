@@ -31,13 +31,13 @@ export class AssosciatesComponent implements OnInit{
       caption2:'Bapatla, Andhra Pradesh',
     },
     {
-      imageSrc: '../assets/images/Vision_img.jpg',
+      imageSrc: '../assets/images/Unibay_Site.jpg',
       caption1: 'Unibay Aquabreeding Private Limited',
       caption2: 'Lovapalem, Andhra Pradesh'
     },
     {
       imageSrc: '../assets/images/Beach.jpeg',
-      caption1: 'MAS Aqua Tecqniks Private Limited',
+      caption1: 'Mas Aqua Techniks Private Limited',
       caption2: 'Nellore, Andhra Pradesh'
     },
     {
