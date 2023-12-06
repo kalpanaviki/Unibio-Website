@@ -1,0 +1,113 @@
+.about {
+    &-first {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      background: linear-gradient(#bad5ba, #517c95);
+      padding: 2rem 1rem;
+      &-col1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 3rem 2rem 3rem;
+        h2 {
+          color: #2d4048;
+          font-size: 5rem;
+          font-weight: 500;
+        }
+        p {
+          color: #000000;
+          font-size: 25px;
+          font-weight: 500;
+          margin-top: 1rem;
+        }
+      }
+      .image {
+        border-radius: 50%;
+        background-image: url("../../assets/images/Unibaypromoimage.jpg");
+        background-size: 100% 100%;
+        margin: 3rem 0rem 2rem 0rem;
+        height: 90%;
+        width:95%;
+      }
+    }
+    &-second {
+      background: #171c1a;
+      display: grid;
+      grid-template-columns: 40% 60%;
+      padding: 2rem;
+      padding-bottom: 10%;
+      .img-container {
+        border-radius: 50%;
+        background-image: url("../../assets/images/Unibayloc.jpg");
+        background-size:cover ;
+        background-repeat: no-repeat; 
+        background-position: center left 10%;
+        margin: 0rem 3rem 0rem 2rem;
+        height:120%;
+      }
+      h2 {
+        color: #20cd8d;
+        font-weight: 700;
+        font-size: 3rem;
+      }
+      ul {
+        color: #f4f4f4;
+        font-size: 1.5rem;
+      }
+    }
+    
+  }
+  /* Media queries for mobile phone screens*/
+  @media (max-width: 480px) {
+    .about {
+      &-first {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 2rem 1rem;
+        &-col1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0rem;
+          h2 {
+            font-size: 23px;
+            font-weight: 600;
+         
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 1rem;
+          }
+        }
+        .image {
+          border-radius: 0;
+          margin: 0rem 0rem 15rem 0rem;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &-second {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 2rem 1rem;
+        .img-container {
+          border-radius:0;
+          margin: 0rem 0rem 15rem 0rem;
+          width: 100%;
+          height: 100%;
+        }
+        h2 {
+          font-size: 23px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 1rem;
+      }
+  
+  }
+  
+    }
+  }

@@ -17,6 +17,10 @@ import { MatIconModule} from '@angular/material/icon';
 import { ResourceComponent } from './resource/resource.component';
 import { SustainabilityComponent } from './sustainability/sustainability.component';
 import { AssosciatesComponent } from './components/assosciates/assosciates.component';
+import { MonodonComponent } from './monodon/monodon.component';
+import { LearnComponent } from './learn/learn.component';
+import { UnibayComponent } from './unibay/unibay.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +35,9 @@ import { AssosciatesComponent } from './components/assosciates/assosciates.compo
     ResourceComponent,
     SustainabilityComponent,
     AssosciatesComponent,
+    MonodonComponent,
+    LearnComponent,
+    UnibayComponent,
    
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule,MatButtonModule,MatIconModule],

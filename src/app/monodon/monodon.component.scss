@@ -1,27 +1,27 @@
-.main-asso
+.main-mono
   {
     position: relative;
     font-size: 25px;
     font-weight: 500;
     h2{
-      color: #3aeb8c;;
+      color: #ebc23a;;
       padding: 1rem 0rem 0 0;
       text-align: center;
-      padding-top: 5rem;
+      padding-top: 1rem;
         font-weight: bold;
         font-size: 3.5rem;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
         
     }
-    background: linear-gradient(#535353, #c5c5c5);
+    background: linear-gradient(rgb(115, 172, 194), #c5c5c5);
   .card-container {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 33% 33% 33%;
     width: 100%;
     padding: 1rem;
     .card {
       position: relative;
-      margin: 1rem;
+      margin: 1.5rem;
       background-color: #f2f2f2;
       transition: transform 0.3s ease; 
       overflow: hidden; 
@@ -41,19 +41,15 @@ img{
 
   .card-text1{
     color:rgb(0, 0, 0);
-    font-size: 18px;
-    font-weight:500;
-  }
-  .card-text2{
-    color:rgb(68, 68, 68);
-    font-size: 14px;
+    padding-bottom:1rem;
+    font-size: 28px;
     font-weight:500;
   }
   }
   
    /* Media queries for mobile phone screens*/
  @media (max-width: 480px) {
-  .main-asso{
+  .main-mono{
       font-size: 16px;
       font-weight: 400;
       h2{

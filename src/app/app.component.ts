@@ -17,7 +17,7 @@ export class AppComponent {
     this.renderer.setStyle(this.divEnqy.nativeElement, 'display', 'table');
     this.renderer.setStyle(this.divEnqy.nativeElement, 'width', window.innerWidth * 0.8 + 'px');
     this.renderer.setStyle(this.divEnqy.nativeElement, 'height', window.innerHeight * 1.0 + 'px');
-    this.renderer.setStyle(this.divEnqy.nativeElement, 'top', window.innerHeight * 0.08 + 'px');
+    this.renderer.setStyle(this.divEnqy.nativeElement, 'top', window.innerHeight * 0.03 + 'px');
     this.renderer.setStyle(this.divEnqy.nativeElement, 'left', window.innerWidth * 0.1 + 'px');
 
     this.renderer.setStyle(this.if1.nativeElement, 'width', this.divEnqy.nativeElement.style.width);

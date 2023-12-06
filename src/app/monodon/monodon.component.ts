@@ -1,57 +1,33 @@
 import { Component,OnInit, HostListener } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-assosciates',
-  templateUrl: './assosciates.component.html',
-  styleUrls: ['./assosciates.component.scss'],
-  animations: [
-    trigger('fade', [
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate('500ms', style({ opacity: 1 })),
-      ]),
-      transition(':leave', [
-        animate('15s', style({ opacity: 0 })),
-      ]),
-    ]),
-  ],
+  selector: 'app-monodon',
+  templateUrl: './monodon.component.html',
+  styleUrls: ['./monodon.component.scss'],
+
 })
-export class AssosciatesComponent implements OnInit{
+export class MonodonComponent implements OnInit{
   slides = [
     {
-      imageSrc: '../assets/images/UnibioIndiafront.png',
-      caption1: 'Unibio (India) Hatcheries Pvt. Ltd.',
-      caption2: 'Mugaiyur, Tamil Nadu',
-      link:'/welcome'
+      slideId: 'borewater',
+      imageSrc: '../assets/images/borewater.jpg',
+      caption1: 'Know your bore water',
+      link:'/learn'
     },
-
     {
-      imageSrc: '../assets/images/gayathri hatchery edit.jpg',
-      caption1: 'Gayathri Bio Marine Private Limited',
-      caption2:'Bapatla, Andhra Pradesh',
+      slideId: 'acclimatisation',
+      imageSrc: '../assets/images/acclimatisation.jpg',
+      caption1: "Acclimatisation of PL's",
       link:'/resource'
     },
     {
-      imageSrc: '../assets/images/Unibay_Site.jpg',
-      caption1: 'Unibay Aquabreeding Private Limited',
-      caption2: 'Lovapalem, Andhra Pradesh',
-      link:'/unibay'
-    },
-    {
-      imageSrc: '../assets/images/Beach.jpeg',
-      caption1: 'Mas Aqua Techniks Private Limited',
-      caption2: 'Nellore, Andhra Pradesh',
+      slideId: 'tankUpscaled',
+      imageSrc: '../assets/images/Tank Upscaled.jpeg',
+      caption1: 'Why Nursery?',
       link:'/resource'
-    },
-    {
-      imageSrc: '../assets/images/golden hatchery.jpeg',
-      caption1: 'Golden Marine Harvest Private Limited',
-      caption2: 'Anumandai, Tamil Nadu',
-      link:'https://goldenmarine.in/'
     },
   ];
-
+  
   slideIndex = 1;
   isLaptop = false;
   isMobile = false;
@@ -83,7 +59,7 @@ export class AssosciatesComponent implements OnInit{
       this.slideIndex = 1;
     }
     if (n < 1) {
-      this.slideIndex = 4;
+      this.slideIndex = 3;
     }
 
     for (i = 0; i < slides.length; i++) {
