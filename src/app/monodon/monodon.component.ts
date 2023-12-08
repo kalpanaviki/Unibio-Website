@@ -91,4 +91,18 @@ export class MonodonComponent implements OnInit{
     console.log('isLaptop:', this.isLaptop);
     console.log('isMobile:', this.isMobile);
   }
+  shareSlide(slideId: string, caption: string): void {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: 'Check out this slide!',
+          text: caption,
+          url: window.location.origin + slideId,
+        })
+        .then(() => console.log('Slide shared successfully'))
+        .catch((error) => console.error('Error sharing slide:', error.message));
+    } else {
+      console.log('Web Share API not supported.');
+    }
+  }
 }

@@ -40,7 +40,7 @@
   }
   &-collapse {
     position: absolute;
-    right: 18%;
+    right: 16%;
   }
   &-nav {
     .nav-item {
@@ -88,9 +88,9 @@
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .navbar {
-    height:7vh;
+    height:8vh;
     &-brand {
       display: flex;
       align-items: center;
@@ -133,3 +133,24 @@
     }
   }
 }
+
+
+@media (min-width: 601px) and (max-width: 991px) {
+  .navbar1 {
+    p{
+      font-size: 18px;
+      font-weight: 500;
+      margin-left:30%;
+
+    }
+
+  }
+  .navbar {
+    &-brand {
+      width:30%;
+    }
+
+}
+}
+
+

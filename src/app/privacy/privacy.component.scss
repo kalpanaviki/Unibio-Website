@@ -1,9 +1,9 @@
    
     .container {
       position:relative;
-      top:100px;  
-      max-width: 800px;
-      margin:0 auto;
+      top:5px;  
+      max-width: auto;
+      margin:auto;
       padding: 40px;
       background-color: #ffffffa2;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -11,24 +11,27 @@
     }
 
     h1 {
-      color: #333;
-      font-size: 24px;
+      color: #000000;
+    font-size: 24px;
+    font-weight: 800;
     }
 
     h3 {
-      color: #555;
-      font-size: 18px;
+      color: #222222;
+    font-size: 18px;
+    font-weight: 800;
     }
 
     h4 {
-        color: #333;
-        font-size: 16px;
+      color: #1a1a1a;
+      font-size: 16px;
+      font-weight: 800;
       }
 
     p {
-      color: #777;
-      font-size: 16px;
-      line-height: 1.5;
+      color: #3f3f3f;
+    font-size: 16px;
+    line-height: 1.5;
     }
 
     a {

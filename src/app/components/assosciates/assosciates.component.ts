@@ -48,7 +48,8 @@ export class AssosciatesComponent implements OnInit{
       imageSrc: '../assets/images/golden hatchery.jpeg',
       caption1: 'Golden Marine Harvest Private Limited',
       caption2: 'Anumandai, Tamil Nadu',
-      link:'https://goldenmarine.in/'
+      link:'https://goldenmarine.in/',
+      externalLink: true //flag identity
     },
   ];
 

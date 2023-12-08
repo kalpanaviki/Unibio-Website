@@ -3,6 +3,7 @@
     position: relative;
     font-size: 25px;
     font-weight: 500;
+    text-align: left;
     h2{
       color: #3aeb8c;;
       padding: 1rem 0rem 0 0;
@@ -36,7 +37,7 @@
 
 img{
     width: 100%;
-     height:100%; 
+     height:250px; 
   }
 
   .card-text1{
@@ -52,12 +53,12 @@ img{
   }
   
    /* Media queries for mobile phone screens*/
- @media (max-width: 480px) {
+ @media (max-width: 600px) {
   .main-asso{
       font-size: 16px;
       font-weight: 400;
       h2{
-        font-size: 23px;
+        font-size: 28px;
         padding: 2rem 1rem 0 0;
         text-shadow: 0.1px 0.1px 0.3px rgba(0, 0, 0, 0.5);
     }
@@ -66,4 +67,25 @@ img{
       grid-template-columns: 100%;
   }
 }
+
+}
+
+
+ /* Media queries for tablet screens*/
+ @media (min-width: 601px) and (max-width: 1025px) {
+  .main-asso{
+      font-size: 22px;
+      font-weight: 400;
+      h2{
+        font-size: 32px;
+        padding: 2rem 1rem 0 0;
+        text-shadow: 0.1px 0.1px 0.3px rgba(0, 0, 0, 0.5);
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: 100%;
+      padding: 0 10%;
+  }
+}
+
 }

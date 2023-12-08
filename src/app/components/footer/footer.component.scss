@@ -30,8 +30,8 @@
     }
   }
 }
-/* Mobile-specific styles within a media query */
-@media (max-width: 468px) {
+/* Mobile-specific styles*/
+@media (max-width: 600px) {
   .footer {
     height: 2.5rem;
   }

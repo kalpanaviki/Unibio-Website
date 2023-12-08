@@ -20,6 +20,7 @@ import { AssosciatesComponent } from './components/assosciates/assosciates.compo
 import { MonodonComponent } from './monodon/monodon.component';
 import { LearnComponent } from './learn/learn.component';
 import { UnibayComponent } from './unibay/unibay.component';
+import { OffcanvasComponent } from './offcanvas/offcanvas.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { UnibayComponent } from './unibay/unibay.component';
     MonodonComponent,
     LearnComponent,
     UnibayComponent,
+    OffcanvasComponent,
    
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule,MatButtonModule,MatIconModule],

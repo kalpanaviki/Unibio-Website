@@ -73,8 +73,9 @@
   }
 }
 
+
 /* Media queries for mobile phone screens*/
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .monodon,.why{
     font-size: 16px;
     font-weight: 400;
@@ -109,7 +110,7 @@
 
 
 /* Media queries for mobile phone screens*/
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .monodon{
       height: 90vh;
       padding-top:1rem;
@@ -129,7 +130,7 @@
 
 
 /* Media queries for mobile phone screens*/
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .why{
       height: 180vh;
       h2{
@@ -143,7 +144,6 @@
     }
   }
 }
-
 
 .demand {
   background-color: #a4a9a6;
@@ -181,7 +181,7 @@
 }
 
 /* Media queries for mobile phone screens*/
-@media (max-width: 480px) {
+@media (max-width: 991px) {
 .demand {
   h2 {
     margin-top:1rem;
@@ -253,7 +253,7 @@
 
 
 /* Media queries for mobile phone screens*/
-@media (max-width: 480px) {
+@media (max-width: 991px) {
   .offer {
     padding: 0rem;
     .inner-container {

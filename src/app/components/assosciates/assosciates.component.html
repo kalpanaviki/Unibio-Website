@@ -7,7 +7,13 @@
          <div class="card-body">
            <h5 class="card-text1">{{ slide.caption1 }}</h5>
            <p class="card-text2">{{ slide.caption2 }}</p>
-           <a href="{{slide.link}}" class="btn btn-primary">Learn more</a>
+           <ng-container *ngIf="slide.externalLink; else internalLink">
+            <a [href]="slide.link" target="_blank" class="btn btn-primary">Learn more</a>
+          </ng-container>
+          
+          <ng-template #internalLink>
+            <a [routerLink]="slide.link" class="btn btn-primary">Learn more</a>
+          </ng-template>
          </div>
        </div>
      </div>

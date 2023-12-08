@@ -29,4 +29,6 @@ export class AppComponent {
     // Access the element using renderer and ElementRef
     this.renderer.setStyle(this.divEnqy.nativeElement, 'display', 'none');
   }
+
+  
 }

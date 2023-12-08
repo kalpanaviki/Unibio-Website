@@ -90,7 +90,7 @@
   
 }
 /* Media queries for mobile phone screens*/
-@media (max-width: 480px) {
+@media (max-width: 1025px) {
   .about {
     &-first {
       display: grid;
@@ -144,6 +144,45 @@
   }
 }
 
+/* Media queries for mobile phone screens*/
+@media (min-width: 601px) and (max-width: 1025px) {
+
+  .about {
+    &-first {
+      padding: 2rem 2rem;
+      &-col1 {
+        margin: 1rem;
+        h2 {
+          font-size: 28px;
+       
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+ 
+    }
+    &-second {
+      padding: 2rem 2rem;
+   
+      h2 {
+        font-size: 28px;
+        margin: 1rem;
+      }
+      p {
+        font-size: 20px;
+        margin: 1rem;
+    }
+
+}
+
+  }
+}
+
+
+
+
+
 .main-esta{
   background: linear-gradient(#e79766,rgb(228, 84, 74));
 .card-container {
@@ -153,7 +192,7 @@
   padding: 1rem;
   .card {
     position: relative;
-    margin: 5rem;
+    margin: 2rem;
     background-color: #dddddd;
     transition: transform 0.3s ease; 
     overflow: hidden; 
@@ -168,23 +207,45 @@
 img{
   width:100%;
   height:100%;
-  padding: 20px;
+  padding: 60px;
 }
 
 .card-text1{
   color:rgb(255, 145, 0);
   font-family: 'Bauhaus Light';
-  font-size: 21px;
+  font-size: 22px;
   font-weight:800;
 }
 .card-text2{
   color:rgb(68, 68, 68);
-  font-size: 28px;
+  font-size: 30px;
   font-weight:800;
 }
 
+@media screen and (min-width: 601px) and (max-width:1025px) {
+  .card {
+    margin: 3rem;
+  }
+  img{
+    width:100%;
+    height:50%;
+    padding: 1rem 1rem 1rem 1rem;
+  }
+  .card-img-top{
+    top:20%;
+    padding: 25px;
+  }
+  .card-text1{
+    font-size: 16px;
+    font-weight:800;
+  }
+  .card-text2{
+    font-size: 20px;
+    font-weight:800;
+  }
 
-@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 600px) {
 .card-container {
   display: flex;
   flex-wrap: nowrap;
@@ -201,19 +262,19 @@ img{
   padding: 1rem 1rem 1rem 1rem;
 }
 .card-text1{
-  font-size: 22px;
+  font-size: 18px;
   font-weight:800;
 }
 .card-text2{
-  font-size: 30px;
+  font-size: 25px;
   font-weight:800;
 }
 
 .card {
   flex: 0 0 auto; 
-  margin-right: 5px;
-  width: 280px;
-  height:300px;
+  margin: 1rem;
+  width: 200px;
+  height:250px;
 }
 
 .card:last-child {
