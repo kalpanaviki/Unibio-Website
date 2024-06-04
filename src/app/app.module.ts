@@ -21,6 +21,9 @@ import { MonodonComponent } from './monodon/monodon.component';
 import { LearnComponent } from './learn/learn.component';
 import { UnibayComponent } from './unibay/unibay.component';
 import { OffcanvasComponent } from './offcanvas/offcanvas.component';
+import { MediaComponent } from './media/media.component';
+import { NewsComponent } from './news/news.component';
+import { EventComponent } from './event/event.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { OffcanvasComponent } from './offcanvas/offcanvas.component';
     LearnComponent,
     UnibayComponent,
     OffcanvasComponent,
+    MediaComponent,
+    NewsComponent,
+    EventComponent,
    
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule,MatButtonModule,MatIconModule],

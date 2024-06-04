@@ -18,7 +18,13 @@ img {
   grid-template-columns: 25% 75%;
   gap: 0rem;
   padding: 2rem;
-  margin-top: 5%;
+  margin-top: 0%;
+}
+.head{
+  font-size: 3.5rem;
+    padding: 1rem 0rem 2rem 2rem;
+    color: #ffd500;
+    font-weight:bold;
 }
 
 .title {
@@ -30,7 +36,7 @@ img {
 }
 
 .description {
-  color: #000000;
+  color: #086788;
   font-size: 1.5rem;
   font-weight: 400;
   padding: 3rem;
@@ -84,7 +90,7 @@ img {
        margin: 0 30%;
       }
   }
-
+  
   .title {
       font-size: 3.5rem;
       padding: 1rem 0rem 2rem 2rem;
@@ -142,53 +148,46 @@ img {
       font-weight: 300;
   }
 }
-.main-sus{
-  background-color: #767db9;
-}
-.main-sus1 {
-  background-color: #767db9;
+
+.main-sus1,.main-sus2 {
+  background-color: #086788;
  
   .card{
-    background-color:  #27353b;
+    background-color:  #ffd500;
   }
   .card-title {
-      color: #20cd8d;
+      color: #086788;
   }
   .card-text {
-      color: #dddddd;
+      color: #000000;
   }
 }
 
-.main-sus2 {
-  background-color: #f0f0f0;
-  .card{
-    background-color: #f2f2f2;
-  }
-  .card-title {
-      color: #20cd8d;
-  }
-  .card-text {
-      color: #27353b;
-  }
-}
+
 
 .main-sus3 {
-  background-color: #cdf3e5;
-  .card-title {
-      color: #20cd8d;
+  .title {
+      color: #ffd500;
+      font-weight: 900;
+      padding: 2rem;
   }
   .card-text {
       color: #27353b;
+  }
+  .description{
+    color: #27353b;
   }
 }
 
 .main-sus4 {
-  background-color: #cdf3e5;
+  .card{
+    background-color: #086788;
+  }
   .card-title {
-      color: #20cd8d;
+      color: #ffd500;
   }
   .card-text {
-      color: #27353b;
+      color: #ffffff;
   }
 }
 

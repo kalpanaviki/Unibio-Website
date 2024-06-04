@@ -1,52 +1,21 @@
 import { Component,OnInit, HostListener } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-assosciates',
-  templateUrl: './assosciates.component.html',
-  styleUrls: ['./assosciates.component.scss'],
-  animations: [
-    trigger('fade', [
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate('500ms', style({ opacity: 1 })),
-      ]),
-      transition(':leave', [
-        animate('15s', style({ opacity: 0 })),
-      ]),
-    ]),
-  ],
+  selector: 'app-news',
+  templateUrl: './news.component.html',
+  styleUrls: ['./news.component.scss']
 })
-export class AssosciatesComponent implements OnInit{
+export class NewsComponent implements OnInit {
   slides = [
     {
-      imageSrc: '../assets/images/UnibioIndiafront.png',
-      caption1: 'Unibio (India) Hatcheries Pvt. Ltd.',
-      caption2: 'Mugaiyur, Tamil Nadu',
-      link:'/welcome'
-    },
-
-    {
-      imageSrc: '../assets/images/Unibay_Site.jpg',
-      caption1: 'Unibay Aquabreeding Private Limited',
-      caption2: 'Lovapalem, Andhra Pradesh',
-      link:'/unibay'
-    },
-    {
-      imageSrc: '../assets/images/Beach.jpeg',
-      caption1: 'Mas Aqua Techniks Private Limited',
-      caption2: 'Nellore, Andhra Pradesh',
-      link:'/resource'
-    },
-    {
-      imageSrc: '../assets/images/golden hatchery.jpeg',
-      caption1: 'Golden Marine Harvest Private Limited',
-      caption2: 'Anumandai, Tamil Nadu',
-      link:'https://goldenmarine.in/',
-      externalLink: true //flag identity
+      slideId: '',
+      imageSrc: '../assets/images/Shrimp_summit_2024.jpg',
+      caption1: 'Shrimp Summit 2024',
+      caption2: 'June 27-29, Chennai',
+      link:''
     },
   ];
-
+  
   slideIndex = 1;
   isLaptop = false;
   isMobile = false;
@@ -78,7 +47,7 @@ export class AssosciatesComponent implements OnInit{
       this.slideIndex = 1;
     }
     if (n < 1) {
-      this.slideIndex = 4;
+      this.slideIndex = 3;
     }
 
     for (i = 0; i < slides.length; i++) {
@@ -110,4 +79,19 @@ export class AssosciatesComponent implements OnInit{
     console.log('isLaptop:', this.isLaptop);
     console.log('isMobile:', this.isMobile);
   }
+  shareSlide(slideId: string, caption: string): void {
+    if (navigator.share) {
+      navigator
+        .share({
+          title: 'Check out this slide!',
+          text: caption,
+          url: window.location.origin + slideId,
+        })
+        .then(() => console.log('Slide shared successfully'))
+        .catch((error) => console.error('Error sharing slide:', error.message));
+    } else {
+      console.log('Web Share API not supported.');
+    }
+  }
+
 }

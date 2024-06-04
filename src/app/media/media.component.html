@@ -1,0 +1,20 @@
+
+<div class="media-header">
+    <ul>
+      <li>
+        <a class="nav-link" (click)="selectMenuItem('news')">News</a>
+      </li>
+      <li>
+        <a class="nav-link" (click)="selectMenuItem('events')">Events</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <ng-container *ngIf="selectedMenuItem === 'news'">
+      <app-news></app-news>
+    </ng-container>
+    <ng-container *ngIf="selectedMenuItem === 'events'">
+      <app-event></app-event>
+    </ng-container>
+  </div>

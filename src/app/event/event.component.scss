@@ -1,0 +1,46 @@
+.offer {
+    padding: 3rem;
+    .inner-container {
+      display: grid;
+      grid-template-columns: 100%;
+      h2 {
+        font-size: 3rem;
+        margin: 0rem 0rem 1rem 8rem;
+      }
+      .accordion {
+        &-item {
+        
+          margin: 1rem;
+        }
+        &-header {
+          margin: 0rem;
+          button {
+            font-family: 'Brandon Grotesque2';
+            font-weight: 700;
+            background-color: #086788;
+            color: #f0c808;
+            text-align: left;
+            font-size: 2rem;
+            outline: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+    .content-image {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .image {
+      width: 8rem;
+      height: 8rem;
+      img {
+        width: 100%;
+        margin-left: 4rem;
+      }
+    }
+  }
+  

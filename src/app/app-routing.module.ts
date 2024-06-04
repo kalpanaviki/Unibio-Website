@@ -11,6 +11,9 @@ import { MonodonComponent } from './monodon/monodon.component';
 import { LearnComponent } from './learn/learn.component';
 import { UnibayComponent } from './unibay/unibay.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { MediaComponent } from './media/media.component';
+import { NewsComponent } from './news/news.component';
+import { EventComponent } from './event/event.component';
 
 
 const routes: Routes = [
@@ -25,6 +28,10 @@ const routes: Routes = [
   { path: 'learn', component: LearnComponent },
   { path: 'unibay', component: UnibayComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'media', component: MediaComponent },
+  { path: 'news', component: MediaComponent },
+  { path: 'event', component: MediaComponent },
+  
 
 ];
 

@@ -12,7 +12,6 @@
   font-weight: bold;
   padding: 3rem 3rem 3rem 0;
   font-size: 3.5rem;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -21,13 +20,13 @@
   position: relative;
   background-image: url("../../../assets/images/Monodon.jpeg");
   background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-blend-mode: multiply;
   color: #ffffff;
 }
 .main-first h2 {
-  color: #e79766;
+  color: #f0c808;
   }
 
 /* Media queries for mobile phone screens*/
@@ -65,12 +64,12 @@
 
 .main-second{
   background-image: url("../../../assets/images/Windmill.jpg");
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   color: #fff;
   background-position: center top 40%;
  h2{
-  color: #91ff00;
+  color: #f0c808;
     }
    
 }
@@ -86,11 +85,11 @@
  }
 .main-third{
   background-image: url("../../../assets/images/Wallpaper Edit.png");
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   color: #fff;
     h2{
-      color: #faf61e;
+      color: #f0c808;
     }
   }
  
@@ -111,13 +110,14 @@
 .main-third .btn {
   font-size: 20px;
   margin-top: 1rem;
-  color: #87cefa;
+  color: #f0c808;
+  background-color: #086788;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
   &:hover {
-    color: #ffffff;
+    transform: scale(1.02);
   }
   .bi {
     text-align: center;

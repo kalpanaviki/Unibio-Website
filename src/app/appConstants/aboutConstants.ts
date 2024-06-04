@@ -93,6 +93,28 @@ let aboutFourthArray = [
      as superior shrimp.`,
   },
 ];
+let aboutFifthArray = [
+  {
+    title: 'Farmers Meet in Pattukottai on 13/04/2024',
+    content: ``,
+  },
+  {
+    title: 'Farmers Meet in Velankanni on 12/04/2024',
+    content: ['../assets/images/acclimatisation.jpg','../assets/images/acclimatisation.jpg'],
+  },
+  {
+    title: '',
+    content: ``,
+  },
+  {
+    title: '',
+    content: ``,
+  },
+  {
+    title: '',
+    content: ``,
+  },
+];
 let featuresData = [
   {
     title: ' Marine Resource',
@@ -112,5 +134,6 @@ export const Properties = Object.freeze({
   ABOUT_SECOND_ARRAY: aboutSecondArray,
   ABOUT_THIRD_ARRAY: aboutThirdArray,
   ABOUT_FOURTH_ARRAY: aboutFourthArray,
+  ABOUT_FIFTH_ARRAY: aboutFifthArray,
   FEATURES_DATA: featuresData,
 });
