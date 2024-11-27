@@ -4,8 +4,8 @@
 }
 .main-s1{
   justify-content: center;
-  background-color: #086788;
-  padding: 12rem 0rem 0rem 2rem;
+  background-color: #0680a8;
+  padding: 8rem 0rem 0rem 2rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   
   
@@ -112,5 +112,15 @@
     }
   }
 
-
+  @media (max-width: 580px) {
+  
+    .main-s1{
+      justify-content: center;
+      background-color: #086788;
+      padding: 5rem 0rem 0rem 2rem;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+  
+  
+  }
  

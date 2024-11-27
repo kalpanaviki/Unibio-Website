@@ -1,19 +1,25 @@
 .container-fluid {
   display: flex;
-  
 }
+
 .main-s1{
   
   justify-content: center;
-  background-color: #086788;
-  padding: 12rem 0rem 0rem 2rem;
+  background: linear-gradient(to bottom right, #b7f8db, #50a7c2);
+  padding: 6rem 0rem 0rem 0rem;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   
   h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900; 
     font-size: 2rem;
-      color: #ffd500;
-      font-weight:bold;
+    background: linear-gradient(to bottom, #bff3dc, #e6e9e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
   }
+
+  
 }
 
 
@@ -21,7 +27,6 @@
   &-first {
     display: grid;
     grid-template-columns: 60% 40%;
-    height: 75vh;
    
     &-col1 {
       display: flex;
@@ -38,6 +43,7 @@
         color: #086788;
         font-size: 25px;
         font-weight: 500;
+        text-align: left;
       }
     }
     .image {
@@ -58,34 +64,40 @@
       background-image: url("../../assets/images/Maturation.jpeg");
       background-size:cover ;
       background-repeat: no-repeat; 
-      background-position: center left 10%;
+      background-position: center left 50%;
       margin: 1.5rem 4rem 0rem 0rem;
       height:90%;
       border-bottom: 5px solid #ffd500;
     }
     h2 {
-      color: #20cd8d;
-      font-weight: 700;
-      font-size: 2.5rem;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500; 
+      font-size: 2rem;
+      background: linear-gradient(to right, #03f8e4, #38ef7d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     p {
       color: #f4f4f4;
       font-size: 25px;
+      text-align: left;
     }
-  }
-  
+  }  
 }
+
+
 /* Media queries for mobile phone screens*/
-@media (max-width: 1025px) {
+@media (max-width: 580px) {
+  .main-s1{
+    padding: 5rem 0rem 0rem 2rem;
+  }
+
   .about {
     &-first {
-      display: grid;
       grid-template-columns: 100%;
-      padding: 2rem 1rem;
+      padding: 0rem 2rem;
+      height: 80vh;
       &-col1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin: 0rem;
         h2 {
           font-size: 23px;
@@ -93,7 +105,7 @@
        
         }
         p {
-          font-size: 16px;
+          font-size: 20px;
           font-weight: 400;
           margin-top: 1rem;
         }
@@ -102,65 +114,31 @@
         border-radius: 0;
         margin: 0rem 0rem 15rem 0rem;
         width: 100%;
-        height: 100%;
+        height: 80%;
       }
     }
     &-second {
       display: grid;
       grid-template-columns: 100%;
-      padding: 2rem 1rem;
+      padding: 0rem 2rem;
       .img-container {
         border-radius:0;
-        margin: 0rem 0rem 15rem 0rem;
+        margin: 3rem 0rem 15rem 0rem;
         width: 100%;
-        height: 100%;
+        height: 80%;
       }
       h2 {
-        font-size: 23px;
+        font-size: 30px;
         font-weight: 600;
       }
       p {
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 1rem;
-    }
-
-}
-
-  }
-}
-
-/* Media queries for mobile phone screens*/
-@media (min-width: 601px) and (max-width: 1025px) {
-
-  .about {
-    &-first {
-      padding: 2rem 2rem;
-      &-col1 {
-        margin: 1rem;
-        h2 {
-          font-size: 28px;
-       
-        }
-        p {
-          font-size: 20px;
-        }
-      }
- 
-    }
-    &-second {
-      padding: 2rem 2rem;
-   
-      h2 {
-        font-size: 28px;
-        margin: 1rem;
-      }
-      p {
         font-size: 20px;
-        margin: 1rem;
+        font-weight: 400;
+        margin-top: 0rem;
     }
 
 }
 
   }
 }
+

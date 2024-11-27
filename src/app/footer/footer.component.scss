@@ -7,7 +7,7 @@
 
   
 .contact-page-2 {
-    padding:1rem 0rem;
+    padding:0rem 0rem;
     max-width: 1300px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
@@ -15,7 +15,9 @@
     h1 {
       text-align: center;
       margin-bottom: 20px;
-      color: #333;
+      background: linear-gradient(to right, #434343, #000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       
     }
   
@@ -31,8 +33,14 @@
           h1{
             font-family: Arial, sans-serif;
             strong{
-              color: #086788;
+              background: linear-gradient(to right, #00c6ff, #3690fd);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
             }
+          }
+
+          img{
+            width: 300px;
           }
           
   
@@ -91,3 +99,35 @@
       }
     }
 
+    /* Media queries for mobile phone screens*/
+    @media (max-width: 580px) {
+      .contact-page-2 {
+      
+        h1 {
+          text-align: center;
+          margin-bottom: 20px;
+          color: #333;
+          
+        }
+      
+        .contact-details {
+          .offices {
+            grid-template-columns: 100%;
+            grid-template-areas:
+             "one" "two" "three" "four" ;
+              .item1 { grid-area: one; }
+              .item2 { grid-area: two;  } /* Unused */
+              .item3 { grid-area: three;}
+              .item4 { grid-area: four;   margin-bottom: 1rem;}
+            gap: 0rem;
+            margin: 0rem 1rem;
+            .navma{
+              display: none;
+            }
+            img{
+              width: 250px;
+            }
+          }   
+        }
+    }
+  }

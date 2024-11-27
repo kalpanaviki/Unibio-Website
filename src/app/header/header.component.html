@@ -1,20 +1,49 @@
-<div id="navbar" class="header">
-    <a id="logo" class="brand" href="#"><img src="../assets/images/UniBio_Logo_nobg.png" /></a>
-    <div id="navbar-right">
-      <a class="link" routerLink="" (click)="navigateAndCloseMenu('/')">Home</a>
-      <a class="link" routerLink="/about" (click)="navigateAndCloseMenu('/about')">About</a>
-      <a class="link" routerLink="/monodon" (click)="navigateAndCloseMenu('/monodon')">Monodon 101</a>
-      <a class="link" routerLink="/sustain" (click)="navigateAndCloseMenu('/sustain')">Sustainability</a>
-      <a class="link" routerLink="/e-manual" (click)="navigateAndCloseMenu('/e-manual')">E-manual</a>
-      <a class="link" routerLink="/media" (click)="navigateAndCloseMenu('/media')">Media</a>
-      <a class="link" routerLink="/contact" (click)="navigateAndCloseMenu('/contact')">Contact</a>
-      <a  class="link active" (click)="openIframe()">Seed Enquiry</a>
-    
-    </div>
-  </div> 
 
-<!-- Container for iframe -->
+  <!-- Desktop Navbar -->
+  <nav id="navbar" class="navbar desktop-navbar">
+    <a id="logo" routerLink="/" class="navbar-brand">
+      <img src="../assets/images/UniBio_nobg.png" alt="Logo" class="logo" />
+    </a>
+    <ul class="navbar-links">
+      <li><a routerLink="/" (click)="navigateAndCloseMenu('/')">Home</a></li>
+      <li><a routerLink="/about" (click)="navigateAndCloseMenu('/about')">About</a></li>
+      <li><a routerLink="/monodon" (click)="navigateAndCloseMenu('/monodon')">Monodon 101</a></li>
+      <li><a routerLink="/sustain" (click)="navigateAndCloseMenu('/sustain')">Sustainability</a></li>
+      <li><a routerLink="/flip" (click)="navigateAndCloseMenu('/flip')">E-Manual</a></li>
+      <li><a routerLink="/media" (click)="navigateAndCloseMenu('/media')">Media</a></li>
+      <li><a routerLink="/contact" (click)="navigateAndCloseMenu('/contact')">Contact</a></li>
+      <li><a class="link active" (click)="openIframe()">Seed Enquiry</a></li>
+    </ul>
+  </nav>
+
+  <div class="visibility">
+  <!-- Mobile Navbar -->
+  <nav class="navbar mobile-navbar">
+    <a routerLink="/" class="navbar-brand">
+      <img src="../assets/images/UniBio_nobg.png" alt="Logo" class="logo" />
+    </a>
+    <button class="navbar-toggler" (click)="openNav()" style="color:#086788;">&#9776;</button>
+  </nav>
+
+  <!-- Offcanvas Sidebar -->
+  <div id="mySidenav" class="sidenav">
+    <img src="../assets/images/Unibio_White_Logo.png" class="logo1" />
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <a routerLink="/" (click)="navigateAndCloseMenu('/')">Home</a><hr>
+    <a routerLink="/about" (click)="navigateAndCloseMenu('/about')">About</a><hr>
+    <a routerLink="/monodon" (click)="navigateAndCloseMenu('/monodon')">Monodon 101</a><hr>
+    <a routerLink="/sustain" (click)="navigateAndCloseMenu('/sustain')">Sustainability</a><hr>
+    <a routerLink="/flip" (click)="navigateAndCloseMenu('/flip')">E-Manual</a><hr>
+    <a routerLink="/media" (click)="navigateAndCloseMenu('/media')">Media</a><hr>
+    <a routerLink="/contact" (click)="navigateAndCloseMenu('/contact')">Contact</a><hr>
+    <a class="link active" (click)="openIframe()">Seed Enquiry</a>
+  </div>
+</div>
+
+  <!-- Container for iframe -->
 <div #iframeContainer id="iframe-container" style="display: none;">
   <iframe #iframe src="" frameborder="0"></iframe>
   <button (click)="closeIframe()">Close</button>
 </div>
+
+

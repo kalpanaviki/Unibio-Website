@@ -10,6 +10,8 @@ import { MonodonComponent } from './monodon/monodon.component';
 import { ContactComponent } from './contact/contact.component';
 import { EManualComponent } from './e-manual/e-manual.component';
 import { LearnComponent } from './learn/learn.component';
+import { FlipbookComponent } from './flipbook/flipbook.component';
+import { OffCanvasMenuComponent } from './offcanvas/offcanvas.component';
 
 
 export const routes: Routes = [
@@ -22,7 +24,9 @@ export const routes: Routes = [
   { path: 'monodon', component: MonodonComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'e-manual', component: EManualComponent },
-  { path: 'learn', component: LearnComponent }
+  { path: 'learn', component: LearnComponent },
+  { path: 'flip', component: FlipbookComponent},
+  { path: 'offcanvas', component: OffCanvasMenuComponent}
 ];
 
 @NgModule({

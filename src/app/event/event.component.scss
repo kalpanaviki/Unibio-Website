@@ -1,15 +1,15 @@
 .accordion {
   .accordion-item {
-    margin:5rem 5rem;
+    margin:1rem 2rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #086788;
+    background: linear-gradient(to right, #36d1dc, #5b86e5);
   
     
 
     .accordion-header {
-      padding: 0.75rem 1.25rem;
-      background-color: #086788;
+      padding: 9px 15px ;
+      background: linear-gradient(to right, #36d1dc, #5b86e5);
       
       
       cursor: pointer;
@@ -87,17 +87,95 @@
 
     .close {
       position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 24px;
+      top: 0px;
+      right: 0px;
+      font-size: 50px;
+      background-color: red;
       cursor: pointer;
     }
 
     .modal-image {
       width: 100%;
-      height: auto;
+      height: 80vh;
     }
   }
 }
 
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+  i {
+    font-size: 2rem;
+    margin-left: 10px;
+    transition: transform 0.2s;
+  }
+
+  .icon-plus::before {
+    content: "+";
+    font-weight: bold;
+  }
+
+  .icon-minus::before {
+    content: "-";
+    font-weight: bold;
+  }
+}
+
+
+
+
+@media (max-width: 580px) {
+  .accordion {
+    .accordion-item {
+      margin: 1rem; /* Reduce margins for smaller screens */
+      border-radius: 3px;
+
+      .accordion-header {
+        padding: 6px 10px ;
+        font-size: 20px; /* Adjust font size for mobile */
+        .accordion-button {
+          font-size: 20px;
+          padding: 0.5rem; /* Reduce padding */
+        }
+      }
+
+      .accordion-body {
+        padding: 1rem;
+      }
+    }
+  }
+
+  .gallery-container {
+    padding: 10px; /* Reduce padding for mobile */
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller grid items */
+    gap: 10px; /* Reduce spacing */
+  }
+
+  .gallery-item {
+    .img-fluid {
+      height: 200px; /* Slightly smaller height for mobile */
+    }
+  }
+
+  .modal {
+    padding: 10px; /* Add padding around the modal */
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly darker for mobile focus */
+
+    .modal-content {
+      padding: 15px; /* Reduce padding */
+      .modal-image {
+        max-height: 40vh; /* Ensure the image doesn't overflow */
+      }
+
+      .close {
+        padding: 1rem ;
+        font-size: 50px; /* Adjust close button size */
+      }
+    }
+  }
+}

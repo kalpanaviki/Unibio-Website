@@ -1,9 +1,11 @@
-import { Component, HostListener, OnInit, ElementRef, ViewChild, Renderer2 } from '@angular/core';
+import { Component,HostListener, OnInit, ElementRef, ViewChild, Renderer2 } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
@@ -11,44 +13,27 @@ export class HeaderComponent implements OnInit {
   @ViewChild('iframeContainer') iframeContainer!: ElementRef;
   @ViewChild('iframe') iframe!: ElementRef;
 
-  constructor(private router: Router, private renderer: Renderer2) {}
-
-  navigateAndCloseMenu(route: string) {
-    const toggleButton = document.querySelector('.navbar-toggler') as HTMLElement;
-    if (toggleButton) {
-      toggleButton.dispatchEvent(new Event('click'));
-    }
-    this.router.navigate([route]);
-  }
-
-  scrollToSection(sectionId: string) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-      const toggleButton = document.querySelector('.navbar-toggler');
-      if (toggleButton) {
-        toggleButton.dispatchEvent(new Event('click'));
-      }
-    }
-  }
+  isMenuOpen: boolean = false; 
+  constructor(private router: Router, private renderer: Renderer2) { }
 
   openNav(): void {
     document.getElementById("mySidenav")!.style.width = "250px";
-    document.getElementById("main")!.style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
 
   closeNav(): void {
     document.getElementById("mySidenav")!.style.width = "0";
-    document.getElementById("main")!.style.marginLeft = "0";
-    document.body.style.backgroundColor = "white";
   }
 
-  openIframe() {
+  navigateAndCloseMenu(route: string): void {
+    this.router.navigate([route]);
+    setTimeout(() => this.closeNav(), 100);
+  }
+
+openIframe() {
     this.renderer.setStyle(this.iframeContainer.nativeElement, 'display', 'block');
     this.renderer.setStyle(this.iframe.nativeElement, 'width', '100%');
     this.renderer.setStyle(this.iframe.nativeElement, 'height', '100%');
-    this.iframe.nativeElement.src = 'http://unibioindia.in/enqyForm.asp';
+    this.iframe.nativeElement.src = 'https://unibioindia.in/enqyForm.asp';
   }
 
   closeIframe() {
@@ -56,6 +41,13 @@ export class HeaderComponent implements OnInit {
     this.iframe.nativeElement.src = '';
   }
 
+  scrollToSection(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      this.isMenuOpen = false; // Close the menu after scrolling
+    }
+  }
   ngOnInit(): void { }
 
   @HostListener('window:scroll', [])
@@ -67,23 +59,22 @@ export class HeaderComponent implements OnInit {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
       if (navbar) navbar.style.padding = '5px 10px';
       if (logo) {
-        logo.style.height = '50px'; // Height after scroll
-        logo.style.width = '115px'; // Width after scroll
+        logo.style.height = '40px'; // Height after scroll
+        logo.style.width = '92px'; // Width after scroll
       }
       links.forEach(link => {
-        (link as HTMLElement).style.fontSize = '22px'; // Font size after scroll
+        (link as HTMLElement).style.fontSize = '20px'; // Font size after scroll
       });
     } else {
       if (navbar) navbar.style.padding = '20px 10px';
       if (logo) {
-        logo.style.height = '80px'; // Initial height
-        logo.style.width = '184px'; // Initial width
+        logo.style.height = '50px'; // Initial height
+        logo.style.width = '115px'; // Initial width
       }
       links.forEach(link => {
-        (link as HTMLElement).style.fontSize = '25px'; // Initial font size
+        (link as HTMLElement).style.fontSize = '22px'; // Initial font size
       });
     }
   }
+
 }
-
-

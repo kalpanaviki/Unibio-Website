@@ -9,16 +9,16 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./event.component.scss']
 })
 export class EventComponent {
-  // Image galleries for different accordion sections
+  // Galleries data remains the same
   galleries = [
     {
       title: 'Shrimp Summit 2024 Delegates pre-conference tour to Unibio (India) Hatcheries Pvt Ltd. located at Mugaiyur',
       images: [
-        { src: '../assets/images/SS_1.jpeg', alt: 'Image 1'},
-        { src: '../assets/images/SS_2.jpeg', alt: 'Image 2'},
-        { src: '../assets/images/SS_3.jpeg', alt: 'Image 3'},
-        { src: '../assets/images/SS_4.jpeg', alt: 'Image 4'},
-        { src: '../assets/images/SS_5.jpeg', alt: 'Image 5'},
+        { src: '../assets/images/SS_1.jpeg', alt: 'Image 1' },
+        { src: '../assets/images/SS_2.jpeg', alt: 'Image 2' },
+        { src: '../assets/images/SS_3.jpeg', alt: 'Image 3' },
+        { src: '../assets/images/SS_4.jpeg', alt: 'Image 4' },
+        { src: '../assets/images/SS_5.jpeg', alt: 'Image 5' },
       ],
     },
     {
@@ -32,9 +32,8 @@ export class EventComponent {
         { src: 'assets/images/Pat_7.jpeg', alt: 'Image 7' },
         { src: 'assets/images/Pat_8.jpeg', alt: 'Image 8' },
         { src: 'assets/images/Pat_9.jpeg', alt: 'Image 9' },
-      ]
+      ],
     },
-
     {
       title: 'Farmers Meet in Velankanni on 12/04/2024',
       images: [
@@ -42,14 +41,16 @@ export class EventComponent {
         { src: 'assets/images/Vel_1.jpeg', alt: 'Image 1' },
         { src: 'assets/images/Vel_7.jpeg', alt: 'Image 7' },
         { src: 'assets/images/Vel_2.jpeg', alt: 'Image 2' },
-        { src: 'assets/images/Vel_3.jpeg', alt: 'Image 3' },    
-      ]
+        { src: 'assets/images/Vel_3.jpeg', alt: 'Image 3' },
+      ],
     },
   ];
 
   selectedImage: any = null;
   modalOpen = false;
-  isAccordionOpen = Array(this.galleries.length).fill(true);
+
+  // Initialize all accordions as closed
+  isAccordionOpen: boolean[] = Array(this.galleries.length).fill(false);
 
   openModal(image: any) {
     this.selectedImage = image;
@@ -61,6 +62,7 @@ export class EventComponent {
   }
 
   toggleAccordion(index: number) {
+    // Toggle the clicked accordion
     this.isAccordionOpen[index] = !this.isAccordionOpen[index];
   }
 }

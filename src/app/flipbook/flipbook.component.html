@@ -1,0 +1,230 @@
+<div class="container-fluid main-s1">
+  <h1>E- Manual</h1>
+</div>
+
+<div class = "container-fluid main-s2">
+<!-- Previous Button -->
+<button id="prev-btn" (click)="goPrevPage()" [style.transform]="prevBtnTransform"> <img style="width: 50px; height: 50 px;" src="../assets/images/Left_arrow_symbol.png" alt="left_svg"><img></button>
+
+<!-- Book -->
+<div id="book" class="book" [style.transform]="bookTransform">
+
+  <!-- Page 1 -->
+  <div id="p1" 
+       class="paper" 
+       [ngClass]="{ flipped: paperStates[0].flipped }" 
+       [style.zIndex]="paperStates[0].zIndex">
+    <div class="front">
+      <div class="front-content">
+        <h1><img style="width: 350px; height: 450 px;" src="../assets/images/EMP1.png" alt="EMP1"></h1>
+      </div>
+    </div>
+    <div class="back">
+      <div class="back-content">
+        <h1><img src="../assets/images/EMP2.png" alt="EMP2"></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 2 -->
+  <div id="p2" 
+       class="paper" 
+       [ngClass]="{ flipped: paperStates[1].flipped }" 
+       [style.zIndex]="paperStates[1].zIndex">
+    <div class="front">
+      <div class="front-content">
+        <h1><img src="../assets/images/EMP3.png" alt="EMP3"></h1>
+      </div>
+    </div>
+    <div class="back">
+      <div class="back-content">
+        <h1><img src="../assets/images/EMP4.png" alt="EMP4"></h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page 3 -->
+  <div id="p3" 
+       class="paper" 
+       [ngClass]="{ flipped: paperStates[2].flipped }" 
+       [style.zIndex]="paperStates[2].zIndex">
+    <div class="front">
+      <div class="front-content">
+        <h1><img src="../assets/images/EMP5.png" alt="EMP5"></h1>
+      </div>
+    </div>
+    <div class="back">
+      <div class="back-content">
+        <h1><img src="../assets/images/EMP6.png" alt="EMP6"></h1>
+      </div>
+    </div>
+  </div>
+
+    <!-- Page 4 -->
+    <div id="p4" 
+    class="paper" 
+    [ngClass]="{ flipped: paperStates[3].flipped }" 
+    [style.zIndex]="paperStates[3].zIndex">
+ <div class="front">
+   <div class="front-content">
+     <h1><img src="../assets/images/EMP7.png" alt="EMP7"></h1>
+   </div>
+ </div>
+ <div class="back">
+   <div class="back-content">
+     <h1><img src="../assets/images/EMP8.png" alt="EMP8"></h1>
+   </div>
+ </div>
+</div>
+
+    <!-- Page 5 -->
+    <div id="p5" 
+    class="paper" 
+    [ngClass]="{ flipped: paperStates[4].flipped }" 
+    [style.zIndex]="paperStates[4].zIndex">
+ <div class="front">
+   <div class="front-content">
+     <h1><img src="../assets/images/EMP9.png" alt="EMP9"></h1>
+   </div>
+ </div>
+ <div class="back">
+   <div class="back-content">
+     <h1><img src="../assets/images/EMP10.png" alt="EMP10"></h1>
+   </div>
+ </div>
+</div>
+
+    <!-- Page 6 -->
+    <div id="p6" 
+    class="paper" 
+    [ngClass]="{ flipped: paperStates[5].flipped }" 
+    [style.zIndex]="paperStates[5].zIndex">
+ <div class="front">
+   <div class="front-content">
+     <h1><img src="../assets/images/EMP11.png" alt="EMP11"></h1>
+   </div>
+ </div>
+ <div class="back">
+   <div class="back-content">
+     <h1><img src="../assets/images/EMP12.png" alt="EMP12"></h1>
+   </div>
+ </div>
+</div>
+
+    <!-- Page 7 -->
+    <div id="p7" 
+    class="paper" 
+    [ngClass]="{ flipped: paperStates[6].flipped }" 
+    [style.zIndex]="paperStates[6].zIndex">
+ <div class="front">
+   <div class="front-content">
+     <h1><img src="../assets/images/EMP13.png" alt="EMP13"></h1>
+   </div>
+ </div>
+ <div class="back">
+   <div class="back-content">
+     <h1><img src="../assets/images/EMP14.png" alt="EMP14"></h1>
+   </div>
+ </div>
+</div>
+
+  <!-- Page 8 -->
+  <div id="p8" 
+  class="paper" 
+  [ngClass]="{ flipped: paperStates[7].flipped }" 
+  [style.zIndex]="paperStates[7].zIndex">
+<div class="front">
+ <div class="front-content">
+   <h1><img src="../assets/images/EMP15.png" alt="EMP15"></h1>
+ </div>
+</div>
+<div class="back">
+ <div class="back-content">
+   <h1><img src="../assets/images/EMP16.png" alt="EMP16"></h1>
+ </div>
+</div>
+</div>
+
+  <!-- Page 9 -->
+  <div id="p9" 
+  class="paper" 
+  [ngClass]="{ flipped: paperStates[8].flipped }" 
+  [style.zIndex]="paperStates[8].zIndex">
+<div class="front">
+ <div class="front-content">
+   <h1><img src="../assets/images/EMP17.png" alt="EMP17"></h1>
+ </div>
+</div>
+<div class="back">
+ <div class="back-content">
+   <h1><img src="../assets/images/EMP18.png" alt="EMP18"></h1>
+ </div>
+</div>
+</div>
+
+  <!-- Page 10 -->
+  <div id="p10" 
+  class="paper" 
+  [ngClass]="{ flipped: paperStates[9].flipped }" 
+  [style.zIndex]="paperStates[9].zIndex">
+<div class="front">
+ <div class="front-content">
+   <h1><img src="../assets/images/EMP19.png" alt="EMP19"></h1>
+ </div>
+</div>
+<div class="back">
+ <div class="back-content">
+   <h1><img src="../assets/images/EMP20.png" alt="EMP20"></h1>
+ </div>
+</div>
+</div>
+
+  <!-- Page 11 -->
+  <div id="p11" 
+  class="paper" 
+  [ngClass]="{ flipped: paperStates[10].flipped }" 
+  [style.zIndex]="paperStates[10].zIndex">
+<div class="front">
+ <div class="front-content">
+   <h1><img src="../assets/images/EMP21.png" alt="EMP21"></h1>
+ </div>
+</div>
+<div class="back">
+ <div class="back-content">
+   <h1><img src="../assets/images/EMP22.png" alt="EMP22"></h1>
+ </div>
+</div>
+</div>
+
+  <!-- Page 12 -->
+  <div id="p12" 
+  class="paper" 
+  [ngClass]="{ flipped: paperStates[11].flipped }" 
+  [style.zIndex]="paperStates[11].zIndex">
+<div class="front">
+ <div class="front-content">
+   <h1><img src="../assets/images/EMP23.png" alt="EMP23"></h1>
+ </div>
+</div>
+<div class="back">
+  <div class="back-content">
+    <h1><img src="../assets/images/EMP24.png" alt="EMP24"></h1>
+  </div>
+</div>
+</div>
+  
+  
+
+</div>
+
+<!-- Next Button -->
+<button id="next-btn" (click)="goNextPage()" [style.transform]="nextBtnTransform"> <img style="width: 50px; height: 50 px;" src="../assets/images/Right_arrow_symbol.png" alt="Right_svg"><img> </button>
+
+</div>
+
+<div class="container-fluid main-s3">
+  <a href="../assets/images/E - manual.pdf" target="_blank">
+    <img src="../assets/images/EMP1.png" alt="Asia Pacific May-June 2024">
+  </a>
+</div>
+

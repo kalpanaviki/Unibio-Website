@@ -3,16 +3,23 @@
     display: flex;
   }
   .main-s1{
+  
     justify-content: center;
-    background-color: #086788;
-    padding: 12rem 0rem 0rem 2rem;
+    background: linear-gradient(to bottom right, #b7f8db, #50a7c2);
+    padding: 6rem 0rem 0rem 0rem;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     
     h1{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 900; 
       font-size: 2rem;
-        color: #ffd500;
-        font-weight:bold;
+      background: linear-gradient(to bottom, #bff3dc, #e6e9e5);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
     }
+  
+    
   }
 
 
