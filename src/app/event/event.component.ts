@@ -1,46 +1,66 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { Properties } from '../appConstants/aboutConstants';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-event',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './event.component.html',
   styleUrls: ['./event.component.scss']
 })
-export class EventComponent implements OnInit {
-  array1: any = [];
-  array2: any = [];
-  array3: any = [];
-  array4: any = [];
-  array5: any = [];
+export class EventComponent {
+  // Image galleries for different accordion sections
+  galleries = [
+    {
+      title: 'Shrimp Summit 2024 Delegates pre-conference tour to Unibio (India) Hatcheries Pvt Ltd. located at Mugaiyur',
+      images: [
+        { src: '../assets/images/SS_1.jpeg', alt: 'Image 1'},
+        { src: '../assets/images/SS_2.jpeg', alt: 'Image 2'},
+        { src: '../assets/images/SS_3.jpeg', alt: 'Image 3'},
+        { src: '../assets/images/SS_4.jpeg', alt: 'Image 4'},
+        { src: '../assets/images/SS_5.jpeg', alt: 'Image 5'},
+      ],
+    },
+    {
+      title: 'Farmers Meet in Pattukottai on 13/04/2024',
+      images: [
+        { src: 'assets/images/Pat_1.jpeg', alt: 'Image 1' },
+        { src: 'assets/images/Pat_2.jpeg', alt: 'Image 2' },
+        { src: 'assets/images/Pat_3.jpeg', alt: 'Image 3' },
+        { src: 'assets/images/Pat_4.jpeg', alt: 'Image 4' },
+        { src: 'assets/images/Pat_6.jpeg', alt: 'Image 6' },
+        { src: 'assets/images/Pat_7.jpeg', alt: 'Image 7' },
+        { src: 'assets/images/Pat_8.jpeg', alt: 'Image 8' },
+        { src: 'assets/images/Pat_9.jpeg', alt: 'Image 9' },
+      ]
+    },
 
-  isLaptop = false;
-  isMobile = false;
+    {
+      title: 'Farmers Meet in Velankanni on 12/04/2024',
+      images: [
+        { src: 'assets/images/Vel_6.jpeg', alt: 'Image 6' },
+        { src: 'assets/images/Vel_1.jpeg', alt: 'Image 1' },
+        { src: 'assets/images/Vel_7.jpeg', alt: 'Image 7' },
+        { src: 'assets/images/Vel_2.jpeg', alt: 'Image 2' },
+        { src: 'assets/images/Vel_3.jpeg', alt: 'Image 3' },    
+      ]
+    },
+  ];
 
-  constructor() {}
+  selectedImage: any = null;
+  modalOpen = false;
+  isAccordionOpen = Array(this.galleries.length).fill(true);
 
-  init() {
-    this.array1 = Properties.ABOUT_FIRST_ARRAY;
-    this.array2 = Properties.ABOUT_SECOND_ARRAY;
-    this.array3 = Properties.ABOUT_THIRD_ARRAY;
-    this.array4 = Properties.ABOUT_FOURTH_ARRAY;
-    this.array5 = Properties.ABOUT_FIFTH_ARRAY;
+  openModal(image: any) {
+    this.selectedImage = image;
+    this.modalOpen = true;
   }
 
-  ngOnInit() {
-    this.init();
-    this.checkScreenSize();
+  closeModal() {
+    this.modalOpen = false;
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event: Event): void {
-    this.checkScreenSize();
-  }
-
-  checkScreenSize(): void {
-    const screenWidth = window.innerWidth;
-    const breakpoint = 480; 
-
-    this.isLaptop = screenWidth > breakpoint;
-    this.isMobile = screenWidth <= breakpoint;
+  toggleAccordion(index: number) {
+    this.isAccordionOpen[index] = !this.isAccordionOpen[index];
   }
 }

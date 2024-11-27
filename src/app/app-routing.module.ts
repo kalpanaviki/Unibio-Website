@@ -1,42 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './components/about/about.component';
-import { MainComponent } from './components/main/main.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
-import { PrivacyComponent } from './privacy/privacy.component';
-import { TermsComponent } from './terms/terms.component';
-import { ResourceComponent } from './resource/resource.component';
-import { SustainabilityComponent } from './sustainability/sustainability.component';
-import { MonodonComponent } from './monodon/monodon.component';
-import { LearnComponent } from './learn/learn.component';
-import { UnibayComponent } from './unibay/unibay.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { MainComponent } from './main/main.component';
+import { SustainComponent } from './sustain/sustain.component';
 import { MediaComponent } from './media/media.component';
 import { NewsComponent } from './news/news.component';
 import { EventComponent } from './event/event.component';
+import { AboutComponent } from './about/about.component';
+import { MonodonComponent } from './monodon/monodon.component';
+import { ContactComponent } from './contact/contact.component';
+import { EManualComponent } from './e-manual/e-manual.component';
+import { LearnComponent } from './learn/learn.component';
 
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', component: MainComponent },
+  { path: 'sustain', component: SustainComponent },
   { path: 'about', component: AboutComponent },
-  {path: 'welcome', component: WelcomeComponent},
-  {path: 'privacy', component: PrivacyComponent},
-  {path: 'terms', component: TermsComponent},
-  {path: 'resource', component: ResourceComponent},
-  {path: 'sustain', component: SustainabilityComponent},
-  {path: 'monodon', component: MonodonComponent},
-  { path: 'learn', component: LearnComponent },
-  { path: 'unibay', component: UnibayComponent },
-  { path: 'contact', component: ContactComponent },
   { path: 'media', component: MediaComponent },
-  { path: 'news', component: MediaComponent },
-  { path: 'event', component: MediaComponent },
-  
-
+  { path: 'news', component: NewsComponent },
+  { path: 'event', component: EventComponent },
+  { path: 'monodon', component: MonodonComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'e-manual', component: EManualComponent },
+  { path: 'learn', component: LearnComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'top' })],
-  exports: [RouterModule],
+  exports: [RouterModule], // Export only the RouterModule
 })
 export class AppRoutingModule {}

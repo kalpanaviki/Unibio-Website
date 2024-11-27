@@ -1,10 +1,14 @@
 import { Component,OnInit, HostListener } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-monodon',
+  standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './monodon.component.html',
-  styleUrls: ['./monodon.component.scss'],
-
+  styleUrls: ['./monodon.component.scss']
 })
 export class MonodonComponent implements OnInit{
   slides = [
@@ -12,19 +16,22 @@ export class MonodonComponent implements OnInit{
       slideId: 'borewater',
       imageSrc: '../assets/images/borewater.jpg',
       caption1: 'Know your bore water',
-      link:'/learn'
+      link:'/learn',
+      isDisabled: false
     },
     {
       slideId: 'acclimatisation',
       imageSrc: '../assets/images/acclimatisation.jpg',
       caption1: "Acclimatisation of PL's",
-      link:'/resource'
+      link:'',
+      isDisabled: true
     },
     {
       slideId: 'tankUpscaled',
       imageSrc: '../assets/images/Tank Upscaled.jpeg',
       caption1: 'Why Nursery?',
-      link:'/resource'
+      link:'',
+      isDisabled: true
     },
   ];
   

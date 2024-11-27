@@ -1,29 +1,37 @@
+.container-fluid {
+  display: flex;
+}
+.main-s1{
+  justify-content: center;
+  background-color: #086788;
+  padding: 12rem 0rem 0rem 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  
+  h1{
+    font-size: 2rem;
+      color: #ffd500;
+      font-weight:bold;
+  }
+}
+
 .main-mono
   {
     position: relative;
     font-size: 25px;
     font-weight: 500;
-    h2{
-      color:#ffd500;
-      padding: 3rem 0 0 0rem;
-      text-align: center;
-        font-weight: bold;
-        font-size: 3.5rem;
-        
-    }
-    background-color: #bdbdbd;
   .card-container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem 0rem;
     .card {
       position: relative;
-      margin: 1.5rem;
-      background-color: #cccccc;
+      margin: 2rem;
+      background-color: #f2f2f2;
       transition: transform 0.3s ease; 
       overflow: hidden; 
-      border: none;
+      border-radius: 5px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     }
   }
 
@@ -40,11 +48,35 @@ img{
 
   .card-text1{
     color:#086788;
-    padding-bottom:1rem;
+    padding:0rem 1rem;
     font-size: 28px;
     font-weight:500;
   }
+  a.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
   }
+  .btn-custom {
+    background-color:  #dddddd;
+    color: #616161;
+    font-size: 20px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.3rem;
+    text-align: center;
+    border-radius: 0.25rem;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .btn-custom:hover {
+    background-color:   #ffd500;
+    color:  #086788;
+    text-decoration: none;
+  }
+  }
+
   
    /* Media queries for mobile phone screens*/
  @media (max-width: 1025px) {

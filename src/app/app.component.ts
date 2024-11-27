@@ -1,34 +1,40 @@
-import { Component,  ElementRef, ViewChild, Renderer2 } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+import { MediaComponent } from './media/media.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
+import { SlideshowComponent } from './slideshow/slideshow.component';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    MediaComponent,
+    CommonModule,
+    ContactComponent,
+    FooterComponent,
+    SlideshowComponent
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppComponent {
-  @ViewChild('divEnqy')
-  divEnqy!: ElementRef;
-  @ViewChild('if1')
-  if1!: ElementRef;
+export class AppComponent implements OnInit {
+  title = 'unibio-web';
 
-  constructor(private renderer: Renderer2) {}
-  validateandsave(): void {
-    // Access the elements using renderer and ElementRef
-    this.renderer.setStyle(this.divEnqy.nativeElement, 'display', 'table');
-    this.renderer.setStyle(this.divEnqy.nativeElement, 'width', window.innerWidth * 0.8 + 'px');
-    this.renderer.setStyle(this.divEnqy.nativeElement, 'height', window.innerHeight * 1.0 + 'px');
-    this.renderer.setStyle(this.divEnqy.nativeElement, 'top', window.innerHeight * 0.03 + 'px');
-    this.renderer.setStyle(this.divEnqy.nativeElement, 'left', window.innerWidth * 0.1 + 'px');
+  constructor(private router: Router) {}
 
-    this.renderer.setStyle(this.if1.nativeElement, 'width', this.divEnqy.nativeElement.style.width);
-    this.renderer.setStyle(this.if1.nativeElement, 'height', this.divEnqy.nativeElement.style.height);
-    this.if1.nativeElement.src = 'http://www.unibioindia.in/enqyForm.asp';
+  ngOnInit() {
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo(0, 0);
+      });
   }
-
-  closeEnqy(): void {
-    // Access the element using renderer and ElementRef
-    this.renderer.setStyle(this.divEnqy.nativeElement, 'display', 'none');
-  }
-
-  
 }
+
